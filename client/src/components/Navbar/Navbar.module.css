@@ -1,0 +1,19 @@
+/*********************************************************************/
+/* styles of NavbarAbajo */
+
+.colorMenuAbajo a, i{
+    color: white;
+}
+
+.textoDropdownMenu a{
+    color: blue;
+}
+
+@media only screen and (min-width:992px) {
+
+    .barraBorrosa {
+        position: absolute;
+        backdrop-filter: blur(7px);
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+}
