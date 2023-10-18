@@ -3,8 +3,8 @@ import styles from './Home.module.css'
 
 export const ImgPortada = () => {
   return (
-    <div className={styles.posicionImgPortada}>
-        <img  src={imgHome} alt=""  />
+    <div className='w-100 overflow-hidden' style={{height:'700px'}} >
+        <img  src={imgHome} alt="" className='w-100 h-100 object-fit-cover' style={{objectPosition:'center'}} />
     </div>
   )
 }
