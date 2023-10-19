@@ -1,4 +1,6 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import styles from './Home.module.css';
+import { Link } from 'react-router-dom';
 
 export const CardBody2Products = () => {
   return (
@@ -20,8 +22,8 @@ export const CardBody2Products = () => {
       </div>
 
       <div className="row row-cols-1 row-cols-md-3 g-4 pb-5">
-        <div className="col">
-          <div className="card h-100 rounded-0 bg-success border border-0 shadow">
+        <Link to={'/SegAutomotor'} className={`col text-decoration-none`}>
+          <div className={`card h-100 rounded-0 bg-success border border-0 shadow`} id={styles.efectCardProductsGen}>
             <i className="bi bi-car-front-fill card-img-top fs-1 text-warning px-4 pt-4"></i>
             <div className="card-body text-white px-4">
               <h5 className="card-title">Seguros Automotor</h5>
@@ -36,9 +38,9 @@ export const CardBody2Products = () => {
               <small className="text-body-secondary">Last updated 3 mins ago</small>
             </div> */}
           </div>
-        </div>
-        <div className="col">
-          <div className="card h-100 rounded-0 border border-0 shadow">
+        </Link>
+        <Link to={'/SegPolizas'} className="col text-decoration-none">
+        <div className={`card h-100 rounded-0 border border-0 shadow ${styles.efectCardProductsGen}`}>
             <i className="bi bi-shield-check card-img-top fs-1 text-warning px-4 pt-4"></i>
             <div className="card-body  px-4">
               <h5 className="card-title">Polizas</h5>
@@ -54,9 +56,9 @@ export const CardBody2Products = () => {
               <small className="text-body-secondary">Last updated 3 mins ago</small>
             </div> */}
           </div>
-        </div>
-        <div className="col">
-          <div className="card h-100 rounded-0 border border-dark shadow-lg z-1">
+        </Link>
+        <Link to={'/SegFamilia'} className="col text-decoration-none">
+        <div className={`card h-100 rounded-0 border border-0 shadow z-1 ${styles.efectCardProductsGen}`}>
             <i className="bi bi-house-heart card-img-top fs-1 text-warning px-4 pt-4"></i>
             <div className="card-body  px-4 ">
               <h5 className="card-title">Seguros Familia</h5>
@@ -70,7 +72,7 @@ export const CardBody2Products = () => {
               <small className="text-body-secondary">Last updated 3 mins ago</small>
             </div> */}
           </div>
-        </div>
+        </Link>
       </div>
       <div className='position-absolute bg-warning d-none d-lg-block d-xl-block' style={{ top:'250px', right:'30px', width:'40px', height:'40px', transform: 'skewY(20deg)'}}></div>
       <div className='position-absolute bg-white d-none d-lg-block d-xl-block' style={{ top:'-80px', right:'-20px', width:'200px', height:'290px', transform: 'skewY(30deg)', clipPath: 'polygon(0% 45%, 100% 0%, 100% 100%, 0% 100%)'}}></div>

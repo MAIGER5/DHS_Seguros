@@ -1,0 +1,31 @@
+.imgPortada{
+    height: 600px;
+    background: #2e8bb7;
+    background: linear-gradient(271deg,#2e8bb7 0%, #056ea0 80%);
+    background: -webkit-linear-gradient(271deg,#2e8bb7 0%, #056ea0 80%);
+    background: -moz-linear-gradient(271deg,#2e8bb7 0%, #056ea0 80%);
+}
+
+/********** COMPONENTE CardImgPortada *****/
+
+.imagePinc::before{
+    content: "";
+    position: absolute;
+    top: 121px;
+    left: 0;
+    width: 100%;
+    height: 545px;
+    background-color: rgba(5, 5, 5, 0.05);
+    backdrop-filter: blur(6px);
+
+    z-index: 1; 
+}
+
+.imagePinc img{
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
+    height: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
+    object-fit: cover; /* Recorta la imagen para ajustarla al contenedor */
+    object-position: left; /* Centra la imagen dentro del contenedor */
+    z-index: 0;
+    opacity: 85%;
+}
