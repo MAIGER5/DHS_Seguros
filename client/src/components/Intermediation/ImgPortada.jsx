@@ -1,9 +1,9 @@
-import imgHome from '../../../images/prueba6.jpg';
+import styles from './intermediation.module.css'
 import { CardImgPortada } from './CardImgPortada';
 
 export const ImgPortada = () => {
   return (
-    <div className='w-100 bg-secondary d-flex' style={{height:'600px'}} >
+    <div className={`w-100 d-flex ${styles.imgPortada}`}>
       <CardImgPortada/>
     </div>
   )

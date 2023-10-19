@@ -1,0 +1,48 @@
+.imgPortada{
+    height: 600px;
+    background: #2e8bb7;
+    background: linear-gradient(271deg,#2e8bb7 0%, #056ea0 80%);
+    background: -webkit-linear-gradient(271deg,#2e8bb7 0%, #056ea0 80%);
+    background: -moz-linear-gradient(271deg,#2e8bb7 0%, #056ea0 80%);
+}
+
+/********** COMPONENTE CardTextIntermediation *****/
+
+@media only screen and (min-width:1400px) {
+
+    .CardbolitasHorizontales{
+        top: 7%;
+        left: 14.7%;
+        z-index: -1;
+    }
+}
+@media only screen and (min-width:1200px) and (max-width:1399px) {
+
+    .CardbolitasHorizontales{
+        top: 7%;
+        left: 15.8%;
+        z-index: -1;
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1199px) {
+
+    .CardbolitasHorizontales{
+        top: 7%;
+        left: 17.1%;
+        z-index: -1;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+    .CardbolitasHorizontales{
+        top: 7%;
+        left: 20%;
+        z-index: -1;
+    }
+}
+@media only screen and (max-width:767px) {
+
+    .CardbolitasHorizontales{
+        display: none;
+    }
+}

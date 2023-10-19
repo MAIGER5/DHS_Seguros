@@ -14,7 +14,7 @@ export const CardBody2Products = () => {
             </div>
           </div>
           <div className="col-md-3 border border-0 d-flex justify-content-center align-items-center">
-            <a href="#" className="btn bg-success text-white fw-semibold fs-5 z-1 rounded-0 ">Contactanos</a>
+          <a href="#" className="btn btn-success mt-2 z-1" role="button" data-bs-toggle="button">Contactanos</a>
           </div>
         </div>
       </div>
