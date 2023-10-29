@@ -1,0 +1,35 @@
+.imgPortada{
+    height: 600px;
+    background: #2e8bb7;
+    background: linear-gradient(271deg,#2e8bb7 0%, #056ea0 80%);
+    background: -webkit-linear-gradient(271deg,#2e8bb7 0%, #056ea0 80%);
+    background: -moz-linear-gradient(271deg,#2e8bb7 0%, #056ea0 80%);
+}
+
+/********** COMPONENTE CardImgPortada *****/
+
+.imagePinc::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-color: #226A8A;
+    opacity: 100%;
+    /* backdrop-filter: blur(6px); */
+}
+
+.gradiantTitle{
+    background: #1b8cbe;
+    background: linear-gradient(180deg,#1b8cbe 10%, #95c11f 200%);
+    background: -webkit-linear-gradient(180deg,#1b8cbe 10%, #95c11f 200%);
+    background: -moz-linear-gradient(180deg,#1b8cbe 10%, #95c11f 200%);}
+
+.gradiantTitleBenefit{
+    background: #226a8a;
+    background: linear-gradient(180deg,#226a8a 10%, #95c11f 200%);
+    background: -webkit-linear-gradient(180deg,#226a8a 10%, #95c11f 200%);
+    background: -moz-linear-gradient(180deg,#226a8a 10%, #95c11f 200%);
+}
+

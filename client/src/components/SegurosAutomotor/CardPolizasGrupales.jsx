@@ -9,7 +9,7 @@ export const CardPolizasGrupales = () => {
         <div className="row g-0 align-middle ">
           <div className="col-md-9">
             <div className="card-body">
-              <h5 className="card-title fs-2">Polizas Grupales </h5>
+              <h5 className="card-title fs-2">Polizas Colectivas </h5>
               <p className="card-text">Descubre y explora nuestro abanico de seguros generales, diseñados para brindarte tranquilidad y protección en cada faceta de tu vida.</p>
               {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
             </div>
@@ -25,7 +25,7 @@ export const CardPolizasGrupales = () => {
           <div className={`card h-100 rounded-0 bg-white border border-0 p-4 `} >
             <i className="bi bi-car-front-fill card-img-top bg-white text-success text-center align-middle px-4 pt-1 border border-1 border-success m-auto rounded-circle" style={{fontSize:'60px', width:'110px', height:'110px'}}></i>
             <div className="card-body  px-4">
-              <h5 className="card-title text-center pb-3">Grupales Vehículos Livianos</h5>
+              <h5 className="card-title text-center pb-3">Colectivas Vehículos Livianos</h5>
               <p className="card-text">Brindamos protección financiera ante posibles daños, accidentes o robos relacionados con vehículos y motociclets, asegurando la tranquilidad y seguridad del propietario y terceros involucrados.</p>
               <ul className="list-group-numbered">
               <li className="list-group-item">Seguros para Automoviles</li>
@@ -42,7 +42,7 @@ export const CardPolizasGrupales = () => {
           <div className={`card h-100 rounded-0 bg-white border border-0 p-4 `} >
             <i className="bi bi-truck-front card-img-top bg-white text-warning text-center align-middle px-4 pt-1 border border-1 border-warning m-auto rounded-circle" style={{fontSize:'60px', width:'110px', height:'110px'}}></i>
             <div className="card-body  px-4">
-              <h5 className="card-title text-center pb-3">Grupales Vehículos Pesados</h5>
+              <h5 className="card-title text-center pb-3">Colectivas Vehículos Pesados</h5>
               <p className="card-text">Brindamos protección financiera ante posibles daños, accidentes o robos relacionados con vehículos y motociclets, asegurando la tranquilidad y seguridad del propietario y terceros involucrados.</p>
               <ul className="list-group-numbered">
               <li className="list-group-item">Seguros para Automoviles</li>

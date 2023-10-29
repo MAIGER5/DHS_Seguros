@@ -6,6 +6,9 @@ import Navbar from './components/Navbar/Navbar'
 import { Footer } from './components/Footer/Footer'
 import { Intermediation } from './components/Intermediation/Intermediation'
 import { SegurosAutomotor } from './components/SegurosAutomotor/SegurosAutomotor'
+import { Contact } from './components/Conctact/Contact'
+import { Polizas } from './components/Polizas/Polizas'
+import { SegurosFamilia } from './components/SegurosFamilia/SegurosFamilia'
 
 function App() {
 
@@ -19,8 +22,9 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/Intermediation' element={<Intermediation/>}/>
         <Route path='/SegAutomotor' element={<SegurosAutomotor/>}/>
-        <Route path='/SegPolizas' element={<Intermediation/>}/>
-        <Route path='/SegFamilia' element={<Intermediation/>}/>
+        <Route path='/SegFamilia' element={<SegurosFamilia/>}/>
+        <Route path='/Contact' element={<Contact/>}/>
+        <Route path='/Polizas' element={<Polizas/>}/>
 
       </Routes>
       <Footer/>

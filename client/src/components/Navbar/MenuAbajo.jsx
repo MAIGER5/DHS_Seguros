@@ -1,14 +1,15 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import styles from './Navbar.module.css'
 import logoDhs from '../../../images/DHS.png'
+import { Link } from 'react-router-dom';
 
 export const MenuAbajo = () => {
   return (
-      <nav className={`w-100 navbar navbar-expand-lg bg-body-none z-1 border border-0 ${styles.barraBorrosa}`} >
+      <nav className={`w-100 navbar navbar-expand-lg bg-body-none z-2 border border-0 ${styles.barraBorrosa}`} >
         <div className="container">
-          <div className='overflow-hidden d-felx d-lg-none d-xl-none' style={{width:'20%', height:'auto'}}>
+          <Link to={'/'} className='overflow-hidden d-felx d-lg-none d-xl-none' style={{width:'20%', height:'auto'}}>
             <img  src={logoDhs} className=' img-fluid'  alt="" />
-          </div>
+          </Link>
           {/* <a className="navbar-brand" href="#">Navbar</a> */}
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"   aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

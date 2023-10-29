@@ -5,7 +5,7 @@ function Navbar() {
 
 
 	return (
-    <div className='mt-2'>
+    <div className='mt-2 z-2'>
       <MenuArriba/>
       <MenuAbajo/>
     </div>

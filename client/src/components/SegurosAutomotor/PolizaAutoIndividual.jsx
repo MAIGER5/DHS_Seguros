@@ -21,7 +21,7 @@ export const PolizaAutoIndividual = () => {
       </div>
 
       <div className="row row-cols-1 row-cols-md-3 pt-5">
-        <div className="col pb-sm-5 pb-md-0">
+        <div className="col pb-5 pb-md-0">
           <div className="card">
             <img src={automovil} className="card-img-top" alt="..."/>
             <div className="card-body">
@@ -30,7 +30,7 @@ export const PolizaAutoIndividual = () => {
             </div>
           </div>
         </div>
-        <div className="col pb-sm-5 pb-md-0">
+        <div className="col pb-5 pb-md-0">
           <div className="card">
             <img src={pesado} className="card-img-top" alt="..."/>
             <div className="card-body">
@@ -39,7 +39,7 @@ export const PolizaAutoIndividual = () => {
             </div>
           </div>
         </div>
-        <div className="col pb-sm-5 pb-md-0">
+        <div className="col pb-5 pb-md-0">
           <div className="card">
             <img src={taxi} className="card-img-top" alt="..."/>
             <div className="card-body">

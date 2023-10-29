@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export const CardBody2Products = () => {
   return (
     // TARJETA ARRIBA
-    <div className='container position-relative'>
+    <div id='productosGenerales' className='container position-relative'>
       <div className="card mb-3 rounded-0 bg-dark border border-0 pt-5" >
         <div className="row g-0 ">
           <div className="col-md-9">
@@ -15,9 +15,9 @@ export const CardBody2Products = () => {
               {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
             </div>
           </div>
-          <div className="col-md-3 border border-0 d-flex justify-content-center align-items-center">
-          <a href="#" className="btn btn-success mt-2 z-1" role="button" data-bs-toggle="button">Contactanos</a>
-          </div>
+          <Link to={'/Contact'} className="col-md-3 border border-0 d-flex justify-content-center align-items-center text-decoration-none z-2">
+            <p  className="btn btn-success" role="button" >Contactanos</p>
+          </Link>
         </div>
       </div>
 
@@ -39,7 +39,7 @@ export const CardBody2Products = () => {
             </div> */}
           </div>
         </Link>
-        <Link to={'/SegPolizas'} className="col text-decoration-none">
+        <Link to={'/Polizas'} className="col text-decoration-none">
         <div className={`card h-100 rounded-0 border border-0 shadow ${styles.efectCardProductsGen}`}>
             <i className="bi bi-shield-check card-img-top fs-1 text-warning px-4 pt-4"></i>
             <div className="card-body  px-4">
@@ -61,7 +61,7 @@ export const CardBody2Products = () => {
         <div className={`card h-100 rounded-0 border border-0 shadow z-1 ${styles.efectCardProductsGen}`}>
             <i className="bi bi-house-heart card-img-top fs-1 text-warning px-4 pt-4"></i>
             <div className="card-body  px-4 ">
-              <h5 className="card-title">Seguros Familia</h5>
+              <h5 className="card-title">Seguros Para Familia</h5>
               <p className="card-text">Resguarda tu presente y futuro con nuestras pólizas integrales. Nuestro seguro de vida garantiza la protección financiera de tus seres queridos, mientras que el seguro de vivienda vela por la seguridad y bienestar de tu hogar. ¡Invierte en tranquilidad y protege lo que más valoras en la vida!.</p>
               <ul className="list-group-numbered">
                 <li className="list-group-item">Seguros de Vida</li>
