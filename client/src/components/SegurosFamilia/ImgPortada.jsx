@@ -1,5 +1,4 @@
-// import imgHome from '../../../images/automotor3.jpg';
-// import imgHome from '../../../../../prueba/cuatro.jpg';
+import imgHome from '../../../images/seg-vida2.jpg';
 import { CardImgPortada } from './CardImgPortada';
 import styles from './SegurosFamilia.module.css'
 
@@ -12,7 +11,7 @@ export const ImgPortada = () => {
       <div className={`w-100 h-100 position-absolute overflow-hidden z-1 ${styles.imagePinc}`} >
         <CardImgPortada/>
       </div>
-      {/* <img src={imgHome} alt="" className='w-100 h-100' style={{objectFit:'cover', objectPosition:'center', opacity:'85%'}} /> */}
+      <img src={imgHome} alt="" className='w-100 h-100' style={{objectFit:'cover', objectPosition:'center', opacity:'85%'}} />
     </div>  
   )
 }

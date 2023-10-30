@@ -9,6 +9,7 @@ import { SegurosAutomotor } from './components/SegurosAutomotor/SegurosAutomotor
 import { Contact } from './components/Conctact/Contact'
 import { Polizas } from './components/Polizas/Polizas'
 import { SegurosFamilia } from './components/SegurosFamilia/SegurosFamilia'
+import { Nosotros } from './components/Nosotros/Nosotros'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/SegFamilia' element={<SegurosFamilia/>}/>
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/Polizas' element={<Polizas/>}/>
+        <Route path='/Nosotros' element={<Nosotros/>}/>
 
       </Routes>
       <Footer/>

@@ -2,7 +2,6 @@ import { ImgPortada } from "../SegurosFamilia/ImgPortada"
 import { CardBenefits } from "./CardBenefits"
 import { CardCaracteristic } from "./CardCaracteristic"
 import { CardHorizontalSegVida } from "./CardHorizontalSegVida"
-import { CardfamilyX3 } from "./CardfamilyX3"
 
 
 export const SegurosFamilia = () => {
@@ -11,9 +10,6 @@ export const SegurosFamilia = () => {
       <div className="" >
           <ImgPortada/>
       </div>
-      {/* <div className="col border-success border-3">
-        <CardfamilyX3/>
-      </div> */}
       <div className="container border border-0 mt-5">
         <CardHorizontalSegVida/>
       </div>

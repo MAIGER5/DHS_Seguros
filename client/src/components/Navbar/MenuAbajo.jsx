@@ -1,9 +1,27 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import styles from './Navbar.module.css'
 import logoDhs from '../../../images/DHS.png'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export const MenuAbajo = () => {
+
+  const location = useLocation();
+
+  let color = {
+    primero:"text-success",
+    segundo:'text-dark',
+
+  };
+
+  const paths = ()=>{
+    return location.pathname == '/'
+            ? color.primero
+            : location.pathname == '/Nosotros'
+            ? color.primero
+            : color.segundo
+  }
+
+
   return (
       <nav className={`w-100 navbar navbar-expand-lg bg-body-none z-2 border border-0 ${styles.barraBorrosa}`} >
         <div className="container">
@@ -18,13 +36,17 @@ export const MenuAbajo = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-0 me-auto mb-2 mb-lg-0 ">
               <li className="nav-item me-5">
-                <a className="nav-link " aria-current="page" href="#">Inicio</a>
+                <Link to={'/'} style={{textDecoration:'none'}}>
+                  <a  aria-current="page" href="#" className={`nav-link ${paths()}`}>Inicio</a>
+                </Link>
               </li>
               <li className="nav-item me-5">
-                <a className="nav-link" href="#">Nosotros</a>
+                <Link to={'/Nosotros'} style={{textDecoration:'none'}}>
+                  <a className={`nav-link ${paths()}`} href="#">Nosotros</a>
+                </Link>
               </li>
               <li className="nav-item dropdown me-5">
-                <a className="nav-link dropdown-toggle" href="#" role="button"    data-bs-toggle="dropdown" aria-expanded="false">
+                <a className={`nav-link dropdown-toggle ${paths()}`} href="#" role="button"    data-bs-toggle="dropdown" aria-expanded="false">
                   Productos
                 </a>
                 <ul className={`dropdown-menu ${styles.textoDropdownMenu}`}>
@@ -35,7 +57,7 @@ export const MenuAbajo = () => {
                 </ul>
               </li>
               <li className="nav-item dropdown me-5">
-                <a className="nav-link dropdown-toggle" href="#" role="button"    data-bs-toggle="dropdown" aria-expanded="false">
+                <a className={`nav-link dropdown-toggle ${paths()}`} href="#" role="button"    data-bs-toggle="dropdown" aria-expanded="false">
                   Servicios
                 </a>
                 <ul className={`dropdown-menu ${styles.textoDropdownMenu}`}>
@@ -46,7 +68,7 @@ export const MenuAbajo = () => {
                 </ul>
               </li>
               <li className="nav-item me-5">
-                <a className="nav-link" aria-disabled="true" href="#">DHS Plus</a>
+                <a className={`nav-link fw-medium ${paths()}`} aria-disabled="true" href="#">DHS Plus</a>
               </li>
             </ul>
             <div className="btn-group">

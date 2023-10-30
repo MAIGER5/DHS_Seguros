@@ -1,4 +1,5 @@
 import segVida from '../../../images/segVida.jpg'
+import styles from './SegurosFamilia.module.css'
 
 export const CardHorizontalSegVida = () => {
   return (
@@ -11,8 +12,8 @@ export const CardHorizontalSegVida = () => {
           <p className="btn btn-secondary mt-5 w-lg-75 text-dark fw-medium">¡Cotiza Ahora!</p>
         </div>
       </div>
-      <div className="card border border-0 px-0 px-md-5">
-        <img src={segVida} className="card-img-top" alt="..." />
+      <div className={`card border border-0 px-0 px-md-5 position-relative`}>
+        <img src={segVida} className={`card-img-top`} alt="..." />
       </div>
       <div className="card border border-0 ">
         <div className="card-body border border-1">
