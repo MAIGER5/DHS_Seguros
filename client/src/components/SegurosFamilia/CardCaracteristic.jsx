@@ -1,5 +1,6 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import styles from './SegurosFamilia.module.css';
+import { Link } from 'react-router-dom';
 
 export const CardCaracteristic = () => {
   return (
@@ -13,9 +14,9 @@ export const CardCaracteristic = () => {
               {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
             </div>
           </div>
-          <div className="col-md-3 border border-0 d-flex justify-content-center align-items-center">
-          <a href="#" className="btn btn-success mt-2 z-1 d-none d-md-block" role="button" data-bs-toggle="button">Contactanos</a>
-          </div>
+          <Link to={'/Contact'} className="col-md-3 border border-0 d-flex justify-content-center align-items-center text-decoration-none">
+            <a href="#" className="btn btn-success mt-2 z-1 d-none d-md-block" >Contactanos</a>
+          </Link>
         </div>
       </div>
 

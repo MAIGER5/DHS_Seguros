@@ -11,7 +11,7 @@ export const Polizas = () => {
         <div className={styles.imgPortadaPoliza}>
             <ImgPortada/>
         </div>
-        <div className= {`${styles.cardCentarlX3}`} >
+        <div className= {`${styles.cardCentarlX3} `} >
             <PolizaX3Absolute/>
         </div>
         <div className="container">

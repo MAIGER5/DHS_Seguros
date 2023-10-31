@@ -3,6 +3,10 @@ import styles from './Home.module.css';
 import { Link } from 'react-router-dom';
 
 export const CardBody2Products = () => {
+
+  const signo = ">";
+
+
   return (
     // TARJETA ARRIBA
     <div id='productosGenerales' className='container position-relative'>
@@ -21,22 +25,21 @@ export const CardBody2Products = () => {
         </div>
       </div>
 
-      <div className="row row-cols-1 row-cols-md-3 g-4 pb-5">
+      <div className="row row-cols-1 row-cols-lg-3 g-4 pb-5">
         <Link to={'/SegAutomotor'} className={`col text-decoration-none`}>
           <div className={`card h-100 rounded-0 bg-success border border-0 shadow`} id={styles.efectCardProductsGen}>
             <i className="bi bi-car-front-fill card-img-top fs-1 text-warning px-4 pt-4"></i>
             <div className="card-body text-white px-4">
               <h5 className="card-title">Seguros Automotor</h5>
-              <p className="card-text">Brindamos protección financiera ante posibles daños, accidentes o robos relacionados con vehículos y motociclets, asegurando la tranquilidad y seguridad del propietario y terceros involucrados.</p>
+              <p className="card-text">Brindamos protección financiera ante posibles daños, accidentes o robos relacionados con vehículos y motociclets, asegurando la tranquilidad y seguridad del propietario y terceros involucrados en los siniestros viales.</p>
               <ul className="list-group-numbered">
               <li className="list-group-item">Seguros para Automoviles</li>
                 <li className="list-group-item">Seguros para Motos</li>
-                <li className="list-group-item">SOAT</li>
+                <li className="list-group-item">Seguros responsabilidad civil</li>
+                <br />
               </ul>
+            <p className='btn text-warning fw-semibold'>Más información {signo} </p>
             </div>
-            {/* <div className="card-footer">
-              <small className="text-body-secondary">Last updated 3 mins ago</small>
-            </div> */}
           </div>
         </Link>
         <Link to={'/Polizas'} className="col text-decoration-none">
@@ -51,6 +54,7 @@ export const CardBody2Products = () => {
                 <li className="list-group-item">Póliza de Cumplimiento</li>
                 <li className="list-group-item">Póliza Todo Riesgos Construcción</li>
               </ul>
+              <p className='btn text-warning fw-semibold'>Más información {signo} </p>
             </div>
             {/* <div className="card-footer">
               <small className="text-body-secondary">Last updated 3 mins ago</small>
@@ -67,10 +71,8 @@ export const CardBody2Products = () => {
                 <li className="list-group-item">Seguros de Vida</li>
                 <li className="list-group-item">Seguros de Vivienda</li>
               </ul>
+              <p className='btn text-warning fw-semibold'>Más información {signo} </p>
             </div>
-            {/* <div className="card-footer">
-              <small className="text-body-secondary">Last updated 3 mins ago</small>
-            </div> */}
           </div>
         </Link>
       </div>

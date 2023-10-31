@@ -1,6 +1,7 @@
 import automovil from '../../../images/automovil.jpg'
 import taxi from '../../../images/taxi.jpg'
 import pesado from '../../../images/pesado1.jpg'
+import { Link } from 'react-router-dom'
 
 export const PolizaAutoIndividual = () => {
   return (
@@ -14,13 +15,13 @@ export const PolizaAutoIndividual = () => {
               {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
             </div>
           </div>
-          <div className="col-md-3 border border-0 d-flex justify-content-center align-items-center">
-          <a href="#" className="btn btn-success mt-2 z-1" role="button" data-bs-toggle="button">Contactanos</a>
-          </div>
+          <Link to={'/Contact'} className="col-md-3 border border-0 d-flex justify-content-center align-items-center text-decoration-none">
+            <a href="#" className="btn btn-success mt-2 z-1" >Contactanos</a>
+          </Link>
         </div>
       </div>
 
-      <div className="row row-cols-1 row-cols-md-3 pt-5">
+      <div className="row row-cols-1 row-cols-lg-3 g-5 pt-5">
         <div className="col pb-5 pb-md-0">
           <div className="card">
             <img src={automovil} className="card-img-top" alt="..."/>
@@ -44,7 +45,7 @@ export const PolizaAutoIndividual = () => {
             <img src={taxi} className="card-img-top" alt="..."/>
             <div className="card-body">
               <h5 className="card-title">Transporte Público</h5>
-              <p className="card-text">Con nuestro seguros, puedes disfrutar de la libertad de la carretera sabiendo que estás respaldado en caso de accidentes. Con nosotros, tu seguridad es primero.</p>
+              <p className="card-text" style={{}}>Con nuestro seguros, disfrutaras de la libertad de la carretera sabiendo que estás respaldado en caso de accidentes viales. Con nosotros, tu seguridad es primero.</p>
             </div>
           </div>
         </div>

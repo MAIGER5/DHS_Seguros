@@ -1,6 +1,7 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import moto from '../../../images/moto.png'
 import auto from '../../../images/auto.png'
+import { Link } from 'react-router-dom';
 // import styles from './intermediation.module.css'
 
 
@@ -13,7 +14,9 @@ export const CardSOAT = () => {
           <h1 className="card title fs-2 fw-semibold border border-0 ">Seguro de Responsabilidad Cicil <br />Contra Daños a Terceros</h1>
           <div className="card-text py-2">Nuestro seguro de responsabilidad civil te brinda la tranquilidad de saber que, en situaciones imprevistas, estás respaldado. Ya sea en el ámbito empresarial o personal, este tipo de póliza cubre los costos asociados con lesiones corporales, daños a la propiedad o perjuicios ocasionados a terceros como resultado de tus actividades personales o las de tu empresa.
           </div>
-          <a href="#" className="btn btn-success mt-2" role="button" data-bs-toggle="button">Contactanos</a>
+          <Link to={'/Contact'} className='text-decoration-none'>
+            <a href="#" className="btn btn-success mt-2" >Contactanos</a>
+          </Link>
         </div>
       </div>
 

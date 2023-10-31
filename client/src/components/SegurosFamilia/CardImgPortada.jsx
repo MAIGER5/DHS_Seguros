@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 
 export const CardImgPortada = () => {
   return (
@@ -12,9 +12,9 @@ export const CardImgPortada = () => {
               <h1 className="card-title d-none d-md-block fs-6 text-dark fw-semibold pb-4 text-center opacity-50" style={{letterSpacing:'7px', transform:'scale(1, 1.3)'}}>CONOCE NUESTRAS SOLUCIONES</h1>
               {/* <h1 className="card-title text-dark fw-bold">Optimiza Tú <br /> Entonro Laboral<br /><a className='text-decoration-none text-warning' href="">con Nosotros</a></h1> */}
               <br />
-              <div className="col border border-0 d-flex  align-items-center justify-content-center">
-                <a href="#" className="btn btn-warning mt-2 text-dark fw-semibold px-4 " role="button" data-bs-toggle="button">Contactanos</a>
-              </div>
+              <Link to={'/Contact'} className="col border border-0 d-flex  align-items-center justify-content-center text-decoration-none">
+                <a href="#" className="btn btn-warning mt-2 text-dark fw-semibold px-4 " >Contactanos</a>
+              </Link>
 
             </div>
           </div>

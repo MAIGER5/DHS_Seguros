@@ -4,7 +4,7 @@ import { Form } from './Form'
 
 export const Contact = () => {
   return (
-    <div className='bg-success w-100 h-100'>
+    <div className='bg-dark w-100 h-100'>
       <div className='w-100 overflow-hidden' style={{height:'100px'}} >
         {/* <img  src={imgHome} alt="" className='w-100 h-100 object-fit-cover' style={{objectPosition:'center'}} /> */}
       </div>
@@ -13,8 +13,8 @@ export const Contact = () => {
         <div className='col-12 col-md-10 col-lg-5 m-auto  border border-0'>
           <Form/>
         </div>
-        <div className='col-12 col-md-10 col-lg-5 m-auto bg-success-gradiant border border-0'>
-          <div className="card h-100 rounded-0 border border-0 bg-transparent shadow">
+        <div className='col-12 col-md-10 col-lg-5 m-auto pb-5 bg-success-gradiant border border-0'>
+          <div className="card h-100 rounded-0 border border-0 bg-success shadow">
             <i className="bi bi-shield-check card-img-top fs-1 text-dark px-4 pt-4"></i>
               <div className="card-body  px-4">
                 <h5 className="card-title text-dark">Información de Contacto</h5>

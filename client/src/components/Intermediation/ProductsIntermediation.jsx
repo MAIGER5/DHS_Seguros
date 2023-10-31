@@ -1,4 +1,5 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Link } from 'react-router-dom';
 
 export const ProductsIntermediation = () => {
   return (
@@ -13,15 +14,15 @@ export const ProductsIntermediation = () => {
               {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
             </div>
           </div>
-          <div className="col-md-3 border border-0 d-flex justify-content-center align-items-center">
-          <a href="#" className="btn btn-success mt-2" role="button" data-bs-toggle="button">Contactanos</a>
-          </div>
+          <Link to={'/Contact'} className="col-md-3 border border-0 d-flex justify-content-center align-items-center text-decoration-none">
+            <a href="#" className="btn btn-success mt-2">Contactanos</a>
+          </Link>
         </div>
       </div>
 
 {/* AQUI EMPIEZAN LAS TARJETAS  */}
 
-      <div className="container row row-cols-1 row-cols-md-4 g-4 pb-5">
+      <div className="container row row-cols-1 row-cols-lg-4 g-4 pb-5">
         <div className="col p-1 p-md-3 p-lg-4">
           <div className="card h-100 rounded-4 bg-dark shadow">
             <i className="bi bi-person-circle card-img-top fs-1 text-warning px-4 pt-4  d-flex justify-content-center"></i>

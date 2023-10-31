@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 
 export const CardImgPortada = () => {
   return (
@@ -12,8 +12,10 @@ export const CardImgPortada = () => {
               <p className="card-text text-white d-none d-sm-block " style={{textWrap:'balance'}}>Nuestra misión es garantizar que tu empresa sea un lugar seguro y saludable para tus colaboradores, promoviendo un ambiente de trabajo en el que todos puedan prosperar y alcanzar su máximo potencial.</p>
               <br />
               <div className="col-md-10 border border-0 d-flex  align-items-center">
-                <a href="#" className="btn btn-dark mt-2 text-success fw-bold px-4 me-5" role="button" data-bs-toggle="button">Contactanos</a>
-                <a href="#" className="btn btn-dark mt-2 text-success fw-bold px-5 d-none d-md-block" role="button" data-bs-toggle="button">Contactanos</a>
+                <Link to={'/Contact'} className='text-decoration-none'>
+                  <a href="#" className="btn btn-dark mt-2 text-success fw-bold px-4 me-5" >Contactanos</a>
+                </Link>
+                <a href="#" className="btn btn-dark mt-2 text-success fw-bold px-5 d-none d-md-block" role="button" data-bs-toggle="button">+57 3012569874</a>
               </div>
 
             </div>

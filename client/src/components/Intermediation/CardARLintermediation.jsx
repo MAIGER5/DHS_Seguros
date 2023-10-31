@@ -4,6 +4,7 @@ import colpatria from '../../../images/colpatria.png'
 import colmena from '../../../images/colmena.png'
 import bolivar from '../../../images/bolivar.png'
 import positiva from '../../../images/positiva.png'
+import { Link } from 'react-router-dom'
 
 export const CardARLintermediation = () => {
   return (
@@ -18,9 +19,9 @@ export const CardARLintermediation = () => {
               {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
             </div>
           </div>
-          <div className="col-md-3 border border-0 d-flex justify-content-center align-items-center">
-          <a href="#" className="btn btn-success mt-2" role="button" data-bs-toggle="button">Contactanos</a>
-          </div>
+          <Link to={'/Contact'} className="col-md-3 border border-0 d-flex justify-content-center align-items-center text-decoration-none">
+            <a href="#" className="btn btn-success mt-2" >Contactanos</a>
+          </Link>
         </div>
       </div>
 

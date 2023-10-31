@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import quienesSomos from '../../../images/quienesSomos.png'
 import filosofia from '../../../images/filosofia.png'
 import social from '../../../images/social.png'
@@ -15,13 +16,13 @@ export const InformacionNosotros = () => {
               Nuestro capital técnico y humano cuenta con la idoneidad para el manejo de riesgos corporativos y conexos, por lo que uno de nuestros objetivos principales es convertirnos en aliados desde la intermediación garantizando a nuestros clientes la mejor oferta comercial. Para esto auditamos constantemente y mantenemos los canales de comunicación entre las aseguradoras y nuestros clientes..</p>
             </div>
           </div>
-          <div className="col-md-2 border border-0 d-flex justify-content-center align-items-center">
-          <a href="#" className="btn btn-success mt-2 z-1" role="button" data-bs-toggle="button">Contactanos</a>
-          </div>
+          <Link to={'/Contact'} className="col-md-2 border border-0 d-flex justify-content-center align-items-center text-decoration-none">
+            <a href="#" className="btn btn-success mt-2 z-1" >Contactanos</a>
+          </Link>
         </div>
       </div>
 
-      <div className="container row row-cols-1 row-cols-md-3 pt-5 m-auto">
+      <div className="container row row-cols-1 row-cols-lg-3 g-4 pt-4 m-auto">
         <div className="col pb-5 pb-md-0">
           <div className="card">
             <img src={quienesSomos} className="card-img-top" alt="..."/>
@@ -36,7 +37,7 @@ export const InformacionNosotros = () => {
             <img src={social} className="card-img-top" alt="..."/>
             <div className="card-body">
               <h5 className="card-title">Nuestra Filosofía</h5>
-              <p className="card-text">Nuestra filosofía se centra en la excelencia en el servicio al cliente, la transparencia en todas nuestras operaciones y un compromiso inquebrantable con la protección y el bienestar de nuestros asegurados. Buscamos la construcción de un futuro seguro y próspero para nuestros clientes.</p>
+              <p className="card-text">Nuestra filosofía es la excelencia en el servicio al cliente, la transparencia en todas nuestras operaciones y un compromiso inquebrantable con la protección y el bienestar de nuestros asegurados. Buscamos la construcción de un futuro seguro y próspero para nuestros clientes.</p>
             </div>
           </div>
         </div>
@@ -45,7 +46,7 @@ export const InformacionNosotros = () => {
             <img src={filosofia} className="card-img-top" alt="..."/>
             <div className="card-body">
               <h5 className="card-title">Responsabilidad Social</h5>
-              <p className="card-text">En DHS LTDA., hemos implementado diversas iniciativas de responsabilidad social que reflejan nuestro compromiso. Colaboramos con organizaciones locales en proyectos de educación, salud y el medio ambiente. Fomentamos la inclusión y diversidad en nuestro equipo de trabajo.</p>
+              <p className="card-text">En DHS LTDA., hemos implementado iniciativas de responsabilidad social que reflejan nuestro compromiso. Colaboramos con organizaciones locales en proyectos de educación, salud y el medio ambiente. Fomentamos la inclusión y diversidad en nuestro equipo de trabajo.</p>
             </div>
           </div>
         </div>

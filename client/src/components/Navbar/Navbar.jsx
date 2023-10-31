@@ -50,28 +50,30 @@ function Navbar() {
             ? color.primero
             : location.pathname == "/Nosotros"  
             ? color.primero
+            : location.pathname == "/Contact"
+            ? color.primero
             : color.segundo
   }
 
 	return (
     
     <div className={`${!scrolled? "mt-2":""} z-100 `}>
-      <div className={`container justify-content-between align-items-center d-none  ${!scrolled? "d-lg-flex d-xl-flex mb-1": ""} `} >
-        <Link to={'/'} className='overflow-hidden' style={{width:'150px', height:'auto'}}>
+      <div className={`container justify-content-between align-items-center d-none ${!scrolled? "d-lg-flex d-xl-flex mb-1": ""} `} >
+        <Link to={'/'} className='overflow-hidden' style={{width:'130px', height:'auto'}}>
             <img  src={logoDhs} className=' img-fluid'  alt="" />
         </Link>
-        <ul className=" nav justify-content-end ">
+        <ul className=" nav justify-content-evenly w-25  ">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Active</a>
+            <i className="bi bi-facebook col-2 border border-0 fs-4 text-success "></i>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Link</a>
+            <i className="bi bi-instagram col-2 border border-0 fs-4 text-success "></i>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Link</a>
+            <i className="bi bi-linkedin col-2 border border-0 fs-4 text-success "></i>
           </li>
-          <li className="nav-item">
-            <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+          <li className="nav-item d-none d-xl-block">
+            <a className="btn border-secondary border-2 rounded-5 ">+57 3016957458</a>
           </li>
         </ul>
       </div>
@@ -83,7 +85,7 @@ function Navbar() {
               <img  src={logoDhs} className=' img-fluid'  alt="" />
           </Link>
 
-          <Link to={'/'} className='overflow-hidden d-felx d-lg-none d-xl-none' style={{width:'30%', height:'auto'}}>
+          <Link to={'/'} className='overflow-hidden d-felx d-lg-none d-xl-none' style={{width:'20%', height:'auto'}}>
             <img  src={logoDhs} className=' img-fluid'  alt="" />
           </Link>
           {/* <a className="navbar-brand" href="#">Navbar</a> */}
@@ -120,27 +122,26 @@ function Navbar() {
                   Servicios
                 </a>
                 <ul className={`dropdown-menu bg-dark  ${styles.textoDropdownMenu}`}>
-                  <Link to={'/Intermediation'} className='text-decoration-none'><a className="dropdown-item text-success" href="#">Intermediacion ARL</a></Link>
+                  <Link to={'/Intermediation'} className='text-decoration-none'><a className="dropdown-item text-success" href="#">Administrar Producto</a></Link>
                   <li><hr className="dropdown-divider" /></li>
-                  <Link className='text-decoration-none'><a className="dropdown-item text-success" href="#">Segruos Automotor</a></Link>
-                  <Link className='text-decoration-none'><a className="dropdown-item text-success" href="#">Seguros Familia</a></Link>
-                  <Link to={'/Polizas'} className='text-decoration-none'><a className="dropdown-item text-success" href="#">Pólizas</a></Link>
+                  <Link className='text-decoration-none'><a className="dropdown-item text-success" href="#">none </a></Link>
+                  <Link className='text-decoration-none'><a className="dropdown-item text-success" href="#">none</a></Link>
                 </ul>
               </li>
-              <li className="nav-item me-5">
-                <a className={`nav-link fw-medium ${paths()}`} aria-disabled="true" href="#">DHS Plus</a>
-              </li>
+              <Link to={'/Contact'} className="nav-item me-5 text-decoration-none">
+                <a className={`nav-link fw-medium ${paths()}`} aria-disabled="true" href="#">Contacto</a>
+              </Link>
             </ul>
             <div className="btn-group">
               <button
                 
-                className="btn btn-link dropdown-toggle text-white"
+                className={`btn btn-link dropdown-toggle ${paths()}`}
                 type="button"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="true"
                 aria-expanded="false"
               >
-                <i className="bi bi-search " />
+                <i className={`bi bi-search ${paths()} `} />
               </button>
               <div className="dropdown-menu">
                 <input className=" dropdown-item form-control me-2 shadow-none" type="search" placeholder="Search"     aria-label="Search" />

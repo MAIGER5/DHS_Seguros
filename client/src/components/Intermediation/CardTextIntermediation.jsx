@@ -1,5 +1,6 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import styles from './intermediation.module.css'
+import styles from './intermediation.module.css';
+import { Link } from 'react-router-dom'
 
 
 export const CardTextIntermediation = () => {
@@ -11,7 +12,9 @@ export const CardTextIntermediation = () => {
           <h1 className="card title fw-semibold border border-0 text-success">Intermediación ARL</h1>
           <div className="card-text py-2">Nos convertimos en sus aliados estratégicos para la intermediación de sus riesgos laborales. Generamos valor para su empresa a través de auditorías regulares y la comunicación abierta y constante entre la Administradora de Riesgos Laborales (ARL) y la empresa con el fin de abordar de manera oportuna los requerimientos, solicitudes y posibles inconvenientes.
           </div>
-          <a href="#" className="btn btn-success mt-2" role="button" data-bs-toggle="button">Contactanos</a>
+          <Link to={'/Contact'}>
+            <a href="#" className="btn btn-success mt-2" >Contactanos</a>
+          </Link>
         </div>
       </div>
 

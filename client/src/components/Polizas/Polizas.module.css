@@ -32,7 +32,7 @@
     margin-bottom: 130px;
 }
 
-@media only screen and (min-width:200px) and (max-width:992px) {
+@media only screen and (min-width:200px) and (max-width:1200px) {
     .cardCentarlX3{
         position: inherit;
         top: none;
