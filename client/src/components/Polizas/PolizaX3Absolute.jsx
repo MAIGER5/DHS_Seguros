@@ -2,7 +2,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export const PolizaX3Absolute = () => {
   return (
-    <div className='container position-relative pt-5 px-0'>
+    <div className='container position-relative  px-0'>
       {/* <div className="card rounded- bg-dark border border-0 ps-3 py-2" >
         <div className="row g-0 align-middle ">
           <div className="col-md-9">
@@ -17,7 +17,7 @@ export const PolizaX3Absolute = () => {
         </div>
       </div> */}
 
-      <div className="row row-cols-1 row-cols-md-3 pt-5">
+      <div className="container row row-cols-1 row-cols-md-3 pt-5">
         <div className="col pb-5 pb-md-0 ">
           <div className="card bg-warning border border-0 " style={{borderRadius:'35px 0px 35px 35px'}}>
             <i className="bi bi-bank2 text-success   text-center fs-1"></i>

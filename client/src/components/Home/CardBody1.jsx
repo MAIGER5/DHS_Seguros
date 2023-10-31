@@ -1,6 +1,6 @@
 import imgCard from '../../../images/seglaboral1.jpg'
-import imgCard1 from '../../../images/prueba10.avif'
-import styles from './Home.module.css'
+// import imgCard1 from '../../../images/prueba10.avif'
+// import styles from './Home.module.css'
 import { Link } from 'react-router-dom'
 
 export const CardBody1 = () => {
@@ -8,7 +8,7 @@ export const CardBody1 = () => {
   <div className="card mb-3 rounded-0 border border-0 position-relative" >
     <div className='position-absolute bg-warning d-none d-lg-block d-xl-block' style={{width:'40px', height:'40px', clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%)'}}></div>
     <div className='position-absolute bottom-0 end-0 bg-success d-none d-lg-block d-xl-block' style={{width:'40px', height:'40px', clipPath: 'polygon(100% 1000%, 100% 0%, 100% 0%, 0% 100%)'}}></div>
-    <div className="row g-0">
+    <div className="row g-4 g-md-0">
       <div className="col-md-6 p-lg-3">
         <div className="card-body w-lg-75">
           <h5 className="card-title fs-2">Intermediación en Riesgos <br /> <a className='text-warning text-decoration-none'>Laborales</a> </h5>

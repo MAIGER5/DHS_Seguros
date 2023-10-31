@@ -43,7 +43,7 @@ export const CardBody2Products = () => {
         <div className={`card h-100 rounded-0 border border-0 shadow ${styles.efectCardProductsGen}`}>
             <i className="bi bi-shield-check card-img-top fs-1 text-warning px-4 pt-4"></i>
             <div className="card-body  px-4">
-              <h5 className="card-title">Polizas</h5>
+              <h5 className="card-title">Pólizas</h5>
               <p className="card-text">¡Asegura tu tranquilidad y protege lo que más valoras con nuestra póliza de seguros! Ofrecemos cobertura completa ante imprevistos, brindándote paz mental y seguridad financiera. ¡No dejes al azar tu futuro, invierte en tu tranquilidad hoy mismo.</p>
               <ul className="list-group-numbered">
                 <li className="list-group-item">Pólizas Multiriesgo</li>

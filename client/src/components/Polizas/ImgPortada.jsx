@@ -5,7 +5,7 @@ import styles from './Polizas.module.css'
 
 export const ImgPortada = () => {
   return (
-    <div className='w-100  position relative z-2' style={{height:'600px'}}>
+    <div className='w-100  position relative z-2' style={{height:'550px'}}>
       <div className={`w-100 h-100 position-absolute`} >
         {/* <CardImgPortada/> */}
       </div>

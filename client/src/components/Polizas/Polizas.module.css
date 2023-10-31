@@ -14,9 +14,31 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 600px;
+    height: 550px;
     background-color: #226A8A;
     opacity: 50%;
     /* backdrop-filter: blur(6px); */
 }
 
+
+.cardCentarlX3{
+    width: 100%;
+    position: absolute;
+    top: 460px;
+    z-index: 1;
+}
+
+.imgPortadaPoliza{
+    margin-bottom: 130px;
+}
+
+@media only screen and (min-width:200px) and (max-width:992px) {
+    .cardCentarlX3{
+        position: inherit;
+        top: none;
+    }
+
+    .imgPortadaPoliza{
+        margin-bottom: 0px;
+    }
+}

@@ -5,7 +5,7 @@ import meeting from '../../../images/meeting.jpeg'
 
 export const CardPoliza2 = () => {
   return (
-    <div className="row py-5 px-2">
+    <div className="row py-3 py-md-5 px-2">
       <div className="col-12 col-md-6 pe-md-5 d-flex pb-sm-5 pb-md-0" style={{alignItems:'center'}}>
         <div className="card-body">
           <h1 className="card title text-success fw-bold m-0 border border-0">POLIZA</h1>
@@ -17,7 +17,7 @@ export const CardPoliza2 = () => {
       </div>
 
 {/* /*********ESTA ES LA OTRA COLUMNA *** */ }
-      <div className="col-12 col-md-6 ps-md-5 position-relative border border-0 rounded-3">
+      <div className="col-12 col-md-6 ps-md-5 mt-5 t-md-0 position-relative border border-0 rounded-3 z-1">
         <div className="mb-3  pb-3" >
           <div className="row g-0 ">
             <div className="col-md-12 px-3 position-relative border border-0 z-2">

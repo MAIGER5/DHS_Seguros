@@ -4,7 +4,7 @@ import styles from './intermediation.module.css'
 
 export const CardTextIntermediation = () => {
   return (
-    <div className="row py-5">
+    <div className="container row py-5">
       <div className="col-12 col-md-6 pe-md-5">
         <div className="card-body">
           <h1 className="card title fw-semibold m-0 border border-0">Servicio de</h1>
@@ -16,7 +16,7 @@ export const CardTextIntermediation = () => {
       </div>
 
 {/* /*********ESTA ES LA OTRA COLUMNA *** */ }
-      <div className="col-12 col-md-6 ps-md-5 position-relative">
+      <div className="col-12 col-md-6 ps-md-5 position-relative pt-5 pt-md-0">
         <div className={`h-75 border border-1 border-warning position-absolute ${styles.CardbolitasHorizontales}`} ></div>
         <div className="mb-3 border border-0 pb-3" >
           <div className="row g-0 ">

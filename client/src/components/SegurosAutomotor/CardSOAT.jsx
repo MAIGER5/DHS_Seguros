@@ -9,16 +9,16 @@ export const CardSOAT = () => {
     <div className="row py-5 px-2">
       <div className="col-12 col-md-6 pe-md-5 d-flex pb-sm-5 pb-md-0" style={{alignItems:'center'}}>
         <div className="card-body">
-          <h1 className="card title text-success fw-bold m-0 border border-0">SOAT</h1>
-          <h1 className="card title fs-2 fw-semibold border border-0 ">Seguro Obligatorio <br />de Accidentes de Tránsito</h1>
-          <div className="card-text py-2">Nos convertimos en sus aliados estratégicos para la intermediación de sus riesgos laborales. Generamos valor para su empresa a través de auditorías regulares y la comunicación abierta y constante entre la Administradora de Riesgos Laborales (ARL) y la empresa con el fin de abordar de manera oportuna los requerimientos, solicitudes y posibles inconvenientes.
+          <h1 className="card title text-success fw-bold m-0 border border-0">RC Moto-Vehículo</h1>
+          <h1 className="card title fs-2 fw-semibold border border-0 ">Seguro de Responsabilidad Cicil <br />Contra Daños a Terceros</h1>
+          <div className="card-text py-2">Nuestro seguro de responsabilidad civil te brinda la tranquilidad de saber que, en situaciones imprevistas, estás respaldado. Ya sea en el ámbito empresarial o personal, este tipo de póliza cubre los costos asociados con lesiones corporales, daños a la propiedad o perjuicios ocasionados a terceros como resultado de tus actividades personales o las de tu empresa.
           </div>
           <a href="#" className="btn btn-success mt-2" role="button" data-bs-toggle="button">Contactanos</a>
         </div>
       </div>
 
 {/* /*********ESTA ES LA OTRA COLUMNA *** */ }
-      <div className="col-12 col-md-6 ps-md-5 position-relative border border-1 rounded-3">
+      <div className="col-12 col-md-6 ps-md-5 mt-5 mt-md-0 py-4 py-md-0 position-relative border border-1 rounded-3">
      
         <div className="mb-3  pb-3" >
           <div className="row g-0 ">
@@ -32,7 +32,7 @@ export const CardSOAT = () => {
                 <img src={moto} alt="" className='card-img w-75 m-auto' />
               </div>
               <div className="card-body ">
-                <h5 className="card-title text-center">SOAT Moto</h5>
+                <h5 className="card-title text-center">Motos</h5>
                 <p className="card-text text-center" style={{fontSize:'14px'}}>Nos enorgullece ofrecer un asesoramiento personalizado y continuo a nuestros clientes, respaldándolos en cada paso de su camino.</p>
               </div>
             </div>
@@ -50,7 +50,7 @@ export const CardSOAT = () => {
                 <img src={auto} alt="" className='card-img w-75 m-auto' />
               </div>
               <div className="card-body ">
-                <h5 className="card-title text-center">SOAT Vehículo</h5>
+                <h5 className="card-title text-center">Vehículo</h5>
                 <p className="card-text text-center" style={{fontSize:'14px'}}>Nos enorgullece ofrecer un asesoramiento personalizado y continuo a nuestros clientes, respaldándolos en cada paso de su camino.</p>
               </div>
             </div>

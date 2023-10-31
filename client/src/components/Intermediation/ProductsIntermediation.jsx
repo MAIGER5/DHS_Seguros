@@ -3,7 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 export const ProductsIntermediation = () => {
   return (
     <div className='container position-relative'>
-      <div className="card mb-3 rounded-0 bg-dark border border-0 pt-5" >
+      <div className="container card mb-3 rounded-0 bg-dark border border-0 pt-5" >
         <div className="row g-0 ">
           <div className="col-md-9">
             <div className="card-body">
@@ -21,7 +21,7 @@ export const ProductsIntermediation = () => {
 
 {/* AQUI EMPIEZAN LAS TARJETAS  */}
 
-      <div className="row row-cols-1 row-cols-md-4 g-4 pb-5">
+      <div className="container row row-cols-1 row-cols-md-4 g-4 pb-5">
         <div className="col p-1 p-md-3 p-lg-4">
           <div className="card h-100 rounded-4 bg-dark shadow">
             <i className="bi bi-person-circle card-img-top fs-1 text-warning px-4 pt-4  d-flex justify-content-center"></i>

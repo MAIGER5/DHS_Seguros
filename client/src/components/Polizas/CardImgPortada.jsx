@@ -13,7 +13,7 @@ export const CardImgPortada = () => {
               <br />
               <div className="col border border-0 d-flex  align-items-center justify-content-center">
                 <a href="#" className="btn btn-dark mt-2 text-success fw-bold px-4 me-5" role="button" data-bs-toggle="button">Contactanos</a>
-                <a href="#" className="btn btn-outline-warning border border-3 mt-2 text-success fw-bold px-5 d-none d-md-block" role="button" data-bs-toggle="button">Contactanos</a>
+                <a href="#" className="btn btn-outline-warning border border-3 mt-2 text-dark fw-bold px-5 d-none d-md-block" role="button" data-bs-toggle="button">+57 3016589785</a>
               </div>
 
             </div>

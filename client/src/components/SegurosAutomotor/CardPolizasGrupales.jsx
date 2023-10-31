@@ -6,10 +6,10 @@ export const CardPolizasGrupales = () => {
     // TARJETA ARRIBA
     <div className='container position-relative pt-5 '>
       <div className="card mb-3 rounded- bg-dark border border-0 ps-3" >
-        <div className="row g-0 align-middle ">
+        <div className="row g-0 align-middle py-4 py-md-0 ">
           <div className="col-md-9">
             <div className="card-body">
-              <h5 className="card-title fs-2">Polizas Colectivas </h5>
+              <h5 className="card-title fs-2 ">Polizas Colectivas </h5>
               <p className="card-text">Descubre y explora nuestro abanico de seguros generales, diseñados para brindarte tranquilidad y protección en cada faceta de tu vida.</p>
               {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
             </div>

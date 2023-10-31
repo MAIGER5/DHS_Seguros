@@ -8,13 +8,13 @@ export const CardResumenPolizas = () => {
       <div className="card mb-3 rounded- bg-dark border border-0 ps-3" >
         <div className="row g-0 align-middle ">
           <div className="col-md-9">
-            <div className="card-body">
+            <div className="card-body py-4">
               <h5 className="card-title fs-2">Pólizas </h5>
               <p className="card-text">Descubre y explora nuestro abanico de Pólizas , diseñadas para brindarle tranquilidad y protección a tu Negocio.</p>
               {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
             </div>
           </div>
-          <div className="col-md-3 border border-0 d-flex justify-content-center align-items-center">
+          <div className="col-md-3 border border-0 d-flex justify-content-center align-items-center mb-4 mb-md-0">
           <a href="#" className="btn btn-success mt-2 z-1" role="button" data-bs-toggle="button">Contactanos</a>
           </div>
         </div>

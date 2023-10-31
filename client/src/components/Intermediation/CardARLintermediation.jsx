@@ -8,7 +8,7 @@ import positiva from '../../../images/positiva.png'
 export const CardARLintermediation = () => {
   return (
     <div className='container position-relative '>
-      <div className="card mb-3 rounded-0  border border-0 pt-3" >
+      <div className="card mb-3 rounded-0  border border-0 pt-3 pb-4 pb-md-0" >
         <div className="row g-0 ">
           <div className="col-md-9">
             <div className="card-body">
