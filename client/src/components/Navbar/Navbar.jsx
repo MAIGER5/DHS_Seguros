@@ -1,7 +1,5 @@
-import { MenuArriba } from './MenuArriba';
-import { MenuAbajo } from './MenuAbajo';
 import logoDhs from '../../../images/DHS.png'
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import styles from './Navbar.module.css'
@@ -10,10 +8,14 @@ import styles from './Navbar.module.css'
 
 function Navbar() {
 
+  const navigate = useNavigate();
+
   const location = useLocation();
 
   
   const [scrolled, setScrolled] = useState(false);
+
+  const [collapso, setCollapso] = useState(false);
 
   useEffect(() => {
 
@@ -55,6 +57,16 @@ function Navbar() {
             : color.segundo
   }
 
+  const handleItemClick = ()=>{
+    setCollapso(true);
+
+    setTimeout(() => {
+      setCollapso(false);
+    }, 2000);
+
+  }
+
+
 	return (
     
     <div className={`${!scrolled? "mt-2":""} z-100 `}>
@@ -89,7 +101,7 @@ function Navbar() {
             <img  src={logoDhs} className=' img-fluid'  alt="" />
           </Link>
           {/* <a className="navbar-brand" href="#">Navbar</a> */}
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"   aria-expanded="true" aria-label="Toggle navigation">
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"   aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
         {/* estas lineas en adelante son el menu que colapsa */}
@@ -109,23 +121,24 @@ function Navbar() {
                 <a className={`nav-link dropdown-toggle ${paths()}`} href="#" role="button"    data-bs-toggle="dropdown" aria-expanded="false">
                   Productos
                 </a>
-                <ul className={`dropdown-menu bg-dark   ${styles.textoDropdownMenu}`}>
-                <Link to={'/Intermediation'} className='text-decoration-none'><a className="dropdown-item text-success" href="#">Intermediacion ARL</a></Link>
+                <ul className={`dropdown-menu bg-dark ${collapso ? 'collapse' : ''} ${styles.textoDropdownMenu}`} >
+                  <Link to={'/Intermediation'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Intermediacion ARL </a></Link>
                   <li><hr className="dropdown-divider" /></li>
-                  <Link to={'/SegAutomotor'} className='text-decoration-none'><a className="dropdown-item text-success" href="#">Segruos Automotor</a></Link>
-                  <Link to={'/SegFamilia'} className='text-decoration-none'><a className="dropdown-item text-success" href="#">Seguros Familia</a></Link>
-                  <Link to={'/Polizas'} className='text-decoration-none'><a className="dropdown-item text-success" href="#">Pólizas</a></Link>
+                  <Link to={'/SegAutomotor'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Segruos Automotor</a></Link>
+                  <Link to={'/SegFamilia'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Seguros Familia</a></Link>
+                  <Link to={'/Polizas'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Pólizas</a></Link>
                 </ul>
               </li>
               <li className="nav-item dropdown me-5">
                 <a className={`nav-link dropdown-toggle ${paths()}`} href="#" role="button"    data-bs-toggle="dropdown" aria-expanded="false">
                   Servicios
                 </a>
-                <ul className={`dropdown-menu bg-dark  ${styles.textoDropdownMenu}`}>
-                  <Link to={'/Intermediation'} className='text-decoration-none'><a className="dropdown-item text-success" href="#">Administrar Producto</a></Link>
+                <ul className={`dropdown-menu bg-dark ${collapso ? 'collapse' : ''} ${styles.textoDropdownMenu}`} >
+                  <Link to={'/Intermediation'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Administración de Servicios </a></Link>
                   <li><hr className="dropdown-divider" /></li>
-                  <Link className='text-decoration-none'><a className="dropdown-item text-success" href="#">none </a></Link>
-                  <Link className='text-decoration-none'><a className="dropdown-item text-success" href="#">none</a></Link>
+                  <Link to={'/SegAutomotor'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">none</a></Link>
+                  <Link to={'/SegFamilia'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">none</a></Link>
+                  <Link to={'/Polizas'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">none</a></Link>
                 </ul>
               </li>
               <Link to={'/Contact'} className="nav-item me-5 text-decoration-none">

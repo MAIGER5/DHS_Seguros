@@ -17,7 +17,6 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop/>
-      <div className='position-realtive'>
         <Navbar/>
     
         <Routes>
@@ -32,7 +31,6 @@ function App() {
     
         </Routes>
         <Footer/>
-      </div>
 
     </BrowserRouter>
   )

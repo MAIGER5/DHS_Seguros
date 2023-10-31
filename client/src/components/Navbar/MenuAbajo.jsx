@@ -74,11 +74,11 @@ export const MenuAbajo = () => {
                 </Link>
               </li>
               <li className="nav-item dropdown me-5 ">
-                <a className={`nav-link dropdown-toggle ${paths()}`} href="#" role="button"    data-bs-toggle="dropdown" aria-expanded="false">
+                <a className={`nav-link dropdown-toggle ${paths()}`} href="#" role="button"    data-bs-toggle="dropdown" aria-expanded="true">
                   Productos
                 </a>
                 <ul className={`dropdown-menu bg-dark   ${styles.textoDropdownMenu}`}>
-                <Link to={'/Intermediation'} className='text-decoration-none'><a className="dropdown-item text-success" href="#">Intermediacion ARL</a></Link>
+                  <Link to={'/Intermediation'} className='text-decoration-none'><a className="dropdown-item text-success" href="#">Intermediacion ARL</a></Link>
                   <li><hr className="dropdown-divider" /></li>
                   <Link to={'/SegAutomotor'} className='text-decoration-none'><a className="dropdown-item text-success" href="#">Segruos Automotor</a></Link>
                   <Link to={'/SegFamilia'} className='text-decoration-none'><a className="dropdown-item text-success" href="#">Seguros Familia</a></Link>
@@ -87,7 +87,7 @@ export const MenuAbajo = () => {
               </li>
               <li className="nav-item dropdown me-5">
                 <a className={`nav-link dropdown-toggle ${paths()}`} href="#" role="button"    data-bs-toggle="dropdown" aria-expanded="false">
-                  Servicios
+                  hola
                 </a>
                 <ul className={`dropdown-menu bg-dark  ${styles.textoDropdownMenu}`}>
                   <Link to={'/Intermediation'} className='text-decoration-none'><a className="dropdown-item text-success" href="#">Intermediacion ARL</a></Link>

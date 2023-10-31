@@ -7,7 +7,7 @@ import { CardARLintermediation } from './CardARLintermediation'
 
 export const Intermediation = () => {
   return (
-    <div className='posicion-relative w-100 h-100'>
+    <div id='Intermediation' className='position-relative w-100 h-100'>
         <div>
             <ImgPortada/>
         </div>
