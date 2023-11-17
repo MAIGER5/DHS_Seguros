@@ -14,8 +14,8 @@ export const CardBody2Products = () => {
         <div className="row g-0 ">
           <div className="col-md-9">
             <div className="card-body">
-              <h5 className="card-title fs-2">Explore Nuestros <a className="text-warning text-decoration-none" href="">Productos Generales</a> </h5>
-              <p className="card-text">Descubre y explora nuestro abanico de seguros generales, diseñados para brindarte tranquilidad y protección en cada faceta de tu vida.</p>
+              <h5 className="card-title fs-2">Descubre Nuestros <a className="text-warning text-decoration-none" href="">Productos Generales</a> </h5>
+              <p className="card-text">Explora nuestro abanico de seguros generales, diseñados para brindarte tranquilidad y protección en cada faceta de tu vida.</p>
               {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
             </div>
           </div>
@@ -25,9 +25,9 @@ export const CardBody2Products = () => {
         </div>
       </div>
 
-      <div className="row row-cols-1 row-cols-lg-3 g-4 pb-5">
-        <Link to={'/SegAutomotor'} className={`col text-decoration-none`}>
-          <div className={`card h-100 rounded-0 bg-success border border-0 shadow`} id={styles.efectCardProductsGen}>
+      <div className="row row-cols-1 row-cols-lg-3 g-4 pb-5 ">
+        <Link to={'/SegAutomotor'} className={`col text-decoration-none rounded-2`}>
+          <div className={`card h-100 rounded-0 bg-success border border-0 shadow rounded-3`} id={styles.efectCardProductsGen}>
             <i className="bi bi-car-front-fill card-img-top fs-1 text-warning px-4 pt-4"></i>
             <div className="card-body text-white px-4">
               <h5 className="card-title">Seguros Automotor</h5>
@@ -43,7 +43,7 @@ export const CardBody2Products = () => {
           </div>
         </Link>
         <Link to={'/Polizas'} className="col text-decoration-none">
-        <div className={`card h-100 rounded-0 border border-0 shadow ${styles.efectCardProductsGen}`}>
+        <div className={`card h-100 rounded-0 border border-0 shadow rounded-3 ${styles.efectCardProductsGen}`}>
             <i className="bi bi-shield-check card-img-top fs-1 text-warning px-4 pt-4"></i>
             <div className="card-body  px-4">
               <h5 className="card-title">Pólizas</h5>
@@ -62,7 +62,7 @@ export const CardBody2Products = () => {
           </div>
         </Link>
         <Link to={'/SegFamilia'} className="col text-decoration-none">
-        <div className={`card h-100 rounded-0 border border-0 shadow z-1 ${styles.efectCardProductsGen}`}>
+        <div className={`card h-100 rounded-0 border border-0 shadow z-1 rounded-3 ${styles.efectCardProductsGen}`}>
             <i className="bi bi-house-heart card-img-top fs-1 text-warning px-4 pt-4"></i>
             <div className="card-body  px-4 ">
               <h5 className="card-title">Seguros Para Familia</h5>

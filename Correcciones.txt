@@ -1,0 +1,8 @@
+1. en la vista de Nosotros hacer un hover para desplegar texto de las imagenes
+2. suprimir los botones contacto que se puedan repetir
+3. adicionar boton de número teléfonico
+4. probar si desplazo el logo del grupo para abajo
+
+5. hacer un efecto hover trasnform scale 1, 1 en las 3 cards de la vista de polizas
+
+6. poner el icon de whatsapp en la navbar y en footer

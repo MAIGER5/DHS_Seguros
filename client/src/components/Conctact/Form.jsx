@@ -2,9 +2,9 @@ import React from 'react'
 
 export const Form = () => {
   return (
-    <form className='col-10 border border-0 m-auto py-4'>
+    <form className='col-10 border border-0 m-auto py-5'>
       {/* <!-- 2 column grid layout with text inputs for the first and last names --> */}
-      <div className="row mb-4">
+      <div className="row mb-2">
         <div className="col">
           <div className="form-outline">
             <input type="text" id="form6Example1" className="form-control" />
@@ -20,32 +20,30 @@ export const Form = () => {
       </div>
 
       {/* <!-- Text input --> */}
-      <div className="form-outline mb-4">
-        <input type="text" id="form6Example3" className="form-control" />
-        <label className="form-label" htmlFor="form6Example3">Empresa</label>
-      </div>
-
-      {/* <!-- Text input --> */}
-      {/* <div className="form-outline mb-4">
-        <input type="text" id="form6Example4" className="form-control" />
-        <label className="form-label" htmlFor="form6Example4">Address</label>
-      </div> */}
-
-      {/* <!-- Email input --> */}
-      <div className="form-outline mb-4">
-        <input type="email" id="form6Example5" className="form-control" />
-        <label className="form-label" htmlFor="form6Example5">Correo electrónico</label>
+      <div className="row mb-2">
+        <div className="col">
+          <div className="form-outline">
+            <input type="text" id="form6Example3" className="form-control" />
+            <label className="form-label" htmlFor="form6Example1">Empresa</label>
+          </div>
+        </div>
+        <div className="col">
+          <div className="form-outline">
+            <input type="text" id="form6Example4" className="form-control" />
+            <label className="form-label" htmlFor="form6Example2">Correo Electónico</label>
+          </div>
+        </div>
       </div>
 
       {/* <!-- Number input --> */}
-      <div className="form-outline mb-4">
+      <div className="form-outline mb-2">
         <input type="number" id="form6Example6" className="form-control" />
-        <label className="form-label" htmlFor="form6Example6">Teléfono</label>
+        <label className="form-label" htmlFor="form6Example6">Teléfono o Móvil</label>
       </div>
 
       {/* <!-- Message input --> */}
       <div className="form-outline mb-4">
-        <textarea className="form-control" id="form6Example7" rows="4"></textarea>
+        <textarea className="form-control" id="form6Example7" rows="2"></textarea>
         <label className="form-label" htmlFor="form6Example7">Información adicional</label>
       </div>
 

@@ -23,7 +23,7 @@ export const CardCentralX2 = () => {
             <div className='col-10'>
               <h5 className="card-title text-white">Seguros Generales </h5>
               <p className="card-text text-white mt-3" style={{fontSize:'14px'}}>Con nuestros seguros generales, garantizamos protección integral para todo lo que valoras. Desde tu hogar hasta tus bienes más preciados, cubrimos cada aspecto importante de tu vida. .</p>
-              <a href="#productosGenerales" className="btn bg-light text-white ">Encuentra el Tuyo</a>
+              <a href="#productosGenerales" style={{scrollBehavior: 'smooth'}} className="btn bg-light text-white ">Encuentra el Tuyo</a>
             </div>
           </div>
         </div>

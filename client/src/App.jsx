@@ -1,6 +1,6 @@
 import { } from 'react'
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 import { Home } from './components/Home/Home'
 import Navbar from './components/Navbar/Navbar'
 import { Footer } from './components/Footer/Footer'
@@ -15,7 +15,7 @@ import ScrollToTop from './components/ScrollToTop'
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop/>
         <Navbar/>
     
@@ -32,7 +32,7 @@ function App() {
         </Routes>
         <Footer/>
 
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
