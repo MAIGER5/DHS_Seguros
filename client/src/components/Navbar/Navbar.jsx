@@ -20,7 +20,7 @@ function Navbar() {
   useEffect(() => {
 
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 0 && location.pathname !== '/PublicityVideo') {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -136,9 +136,9 @@ function Navbar() {
                 <ul className={`dropdown-menu bg-dark ${collapso ? 'collapse' : ''} ${styles.textoDropdownMenu}`} >
                   <Link to={'/Intermediation'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Administración de Servicios </a></Link>
                   <li><hr className="dropdown-divider" /></li>
-                  <Link to={'/SegAutomotor'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">none</a></Link>
-                  <Link to={'/SegFamilia'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">none</a></Link>
-                  <Link to={'/Polizas'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">none</a></Link>
+                  <Link to={'/PublicityVideo'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Actualidad</a></Link>
+                  {/* <Link to={'/SegFamilia'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">none</a></Link>
+                  <Link to={'/Polizas'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">none</a></Link> */}
                 </ul>
               </li>
               <Link to={'/Contact'} className="nav-item me-5 text-decoration-none">

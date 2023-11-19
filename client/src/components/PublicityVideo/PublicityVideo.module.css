@@ -1,0 +1,22 @@
+.imgBacground{
+    background-image: url('../../../images/publicity.jpeg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen en el fondo */
+    height: 93vh; /* Ajusta la altura de la página al 100% del viewport */
+}
+
+.barraVertical::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  /* Estilo para el fondo de la barra de desplazamiento */
+  .barraVertical::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.3); /* Color de fondo de la barra de desplazamiento */
+  }
+  
+  /* Estilo para el "pulgar" de la barra de desplazamiento */
+  .barraVertical::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); /* Color del "pulgar" de la barra de desplazamiento */
+    border-radius: 6px; /* Radio de borde del "pulgar" */
+  }

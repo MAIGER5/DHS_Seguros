@@ -11,8 +11,11 @@ import { Polizas } from './components/Polizas/Polizas'
 import { SegurosFamilia } from './components/SegurosFamilia/SegurosFamilia'
 import { Nosotros } from './components/Nosotros/Nosotros'
 import ScrollToTop from './components/ScrollToTop'
+import { PublicityVideo } from './components/PublicityVideo/PublicityVideo'
 
 function App() {
+
+  
 
   return (
     <HashRouter>
@@ -28,6 +31,7 @@ function App() {
           <Route path='/Contact' element={<Contact/>}/>
           <Route path='/Polizas' element={<Polizas/>}/>
           <Route path='/Nosotros' element={<Nosotros/>}/>
+          <Route path='/PublicityVideo' element={<PublicityVideo/>}/>
     
         </Routes>
         <Footer/>
