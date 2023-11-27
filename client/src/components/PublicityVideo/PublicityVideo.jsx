@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './PublicityVideo.module.css'
-import card1 from '../../../images/nosotros.jpeg'
 import { VideosColum } from './VideosColum'
 import { TextColumn } from './TextColumn'
 import { VistaVideo } from './VistaVideo'
@@ -12,7 +11,7 @@ export const PublicityVideo = () => {
       <VideosColum/>
       
       <TextColumn/>
-
+      
       <VistaVideo/>
 
     </div>

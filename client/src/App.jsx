@@ -12,6 +12,7 @@ import { SegurosFamilia } from './components/SegurosFamilia/SegurosFamilia'
 import { Nosotros } from './components/Nosotros/Nosotros'
 import ScrollToTop from './components/ScrollToTop'
 import { PublicityVideo } from './components/PublicityVideo/PublicityVideo'
+import { FormNewVideo } from './components/PublicityVideo/FormNewVideo'
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <Route path='/Polizas' element={<Polizas/>}/>
           <Route path='/Nosotros' element={<Nosotros/>}/>
           <Route path='/PublicityVideo' element={<PublicityVideo/>}/>
+          <Route path='/FormNewVideo' element={<FormNewVideo/>}/>
     
         </Routes>
         <Footer/>

@@ -3,10 +3,14 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import styles from './Navbar.module.css'
+import { useDispatch } from 'react-redux';
+import { getVideosAction } from '../../Redux/Actions/getVideosAction';
 
 
 
 function Navbar() {
+
+  const dispatch = useDispatch();
 
   const navigate = useNavigate();
 
@@ -18,6 +22,8 @@ function Navbar() {
   const [collapso, setCollapso] = useState(false);
 
   useEffect(() => {
+
+    dispatch(getVideosAction())
 
     const handleScroll = () => {
       if (window.scrollY > 0 && location.pathname !== '/PublicityVideo') {
@@ -134,9 +140,21 @@ function Navbar() {
                   Servicios
                 </a>
                 <ul className={`dropdown-menu bg-dark ${collapso ? 'collapse' : ''} ${styles.textoDropdownMenu}`} >
-                  <Link to={'/Intermediation'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Administración de Servicios </a></Link>
+                  <Link to={'/Intermediation'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Mis Polizas</a></Link>
                   <li><hr className="dropdown-divider" /></li>
                   <Link to={'/PublicityVideo'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Actualidad</a></Link>
+                  {/* <Link to={'/SegFamilia'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">none</a></Link>
+                  <Link to={'/Polizas'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">none</a></Link> */}
+                </ul>
+              </li>
+              <li className="nav-item dropdown me-5">
+                <a className={`nav-link dropdown-toggle ${paths()}`} href="#" role="button"    data-bs-toggle="dropdown" aria-expanded="false">
+                  Adnministrador
+                </a>
+                <ul className={`dropdown-menu bg-dark ${collapso ? 'collapse' : ''} ${styles.textoDropdownMenu}`} >
+                  <Link to={'/Intermediation'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Monitoreo de Datos</a></Link>
+                  <li><hr className="dropdown-divider" /></li>
+                  <Link to={'/FormNewVideo'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Formulario de Videos</a></Link>
                   {/* <Link to={'/SegFamilia'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">none</a></Link>
                   <Link to={'/Polizas'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">none</a></Link> */}
                 </ul>

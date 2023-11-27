@@ -8,7 +8,7 @@ export const Footer = () => {
 
   return (
     <div>
-      { location.pathname !== '/PublicityVideo' && <FooterBody/>}
+       {location.pathname !== '/PublicityVideo' && location.pathname !== '/FormNewVideo' && <FooterBody />}
     </div>
   )
 }
