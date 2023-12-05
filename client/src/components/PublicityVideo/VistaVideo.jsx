@@ -3,12 +3,15 @@ import styles from './PublicityVideo.module.css'
 import ReactPlayer from 'react-player'
 
 
-export const VistaVideo = () => {
+export const VistaVideo = ({url, enviarDatos2}) => {
 
   const [close, setClose] = useState(false);
 
   const handleClose = () => {
+    const statePadre = ""
     setClose(true)
+    enviarDatos2(statePadre);
+    
   }
 
   return (
@@ -17,7 +20,7 @@ export const VistaVideo = () => {
       {
         !close
         ? <ReactPlayer
-          url='https://www.youtube.com/watch?v=0L4fK-M0pyM'
+          url={url}
           width={'100%'}
           height={'100%'}
           controls

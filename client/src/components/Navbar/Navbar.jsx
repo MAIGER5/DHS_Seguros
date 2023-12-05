@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import styles from './Navbar.module.css'
 import { useDispatch } from 'react-redux';
-import { getVideosAction } from '../../Redux/Actions/getVideosAction';
 
 
 
@@ -23,7 +22,6 @@ function Navbar() {
 
   useEffect(() => {
 
-    dispatch(getVideosAction())
 
     const handleScroll = () => {
       if (window.scrollY > 0 && location.pathname !== '/PublicityVideo') {

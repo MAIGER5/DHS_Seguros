@@ -9,3 +9,4 @@ conn.sync({ alter: true }).then(() => {  //sincroniza o crea la talba definida e
       console.log('estoy en el servidor')
     });
 });
+

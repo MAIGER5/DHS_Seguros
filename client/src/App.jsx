@@ -1,6 +1,6 @@
-import { } from 'react'
+import { useEffect } from 'react'
 import './App.css'
-import { Routes, Route, HashRouter } from 'react-router-dom'
+import { Routes, Route, HashRouter, useLocation } from 'react-router-dom'
 import { Home } from './components/Home/Home'
 import Navbar from './components/Navbar/Navbar'
 import { Footer } from './components/Footer/Footer'
@@ -16,7 +16,6 @@ import { FormNewVideo } from './components/PublicityVideo/FormNewVideo'
 
 function App() {
 
-  
 
   return (
     <HashRouter>

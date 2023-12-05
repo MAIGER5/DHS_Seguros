@@ -5,6 +5,8 @@ import { CardBody2Products } from './CardBody2Products';
 
 
 export const Home = () => {
+
+
   
   return (
     <div className='position-relative w-100 h-100'>

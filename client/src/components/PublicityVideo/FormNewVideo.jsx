@@ -2,9 +2,13 @@ import React, { useState } from 'react';
 import styles from './PublicityVideo.module.css'
 import { useDispatch } from 'react-redux';
 import { postVideoAction } from '../../Redux/Actions/postVideoAction';
+import { CardVideoSuccesfull } from './CardVideoSuccesfull';
 
 
 export const FormNewVideo = () => {
+
+  const [ successfull, setsuccessfull ] = useState(false)
+  const [ close, setClose ] = useState(false)
 
   const [ form, setForm ] = useState({
     title:"",
@@ -27,6 +31,21 @@ export const FormNewVideo = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(postVideoAction(form))
+
+    setsuccessfull(true);
+    setsuccessfull(true);
+  }
+
+  const handleClose = (event) => {
+    event.preventDefault();
+    setsuccessfull(false)
+    setForm({
+      title:"",
+      date:"",
+      image:"",
+      url:"",
+    })
+
   }
 
   return (
@@ -69,8 +88,15 @@ export const FormNewVideo = () => {
 
         {/* <!-- Submit button --> */}
         <button type="submit" className="btn btn-success btn-block mb-4">Enviar</button>
-      </form>  
-
+      </form>
+      {
+        successfull
+        ? <div className='w-25 h-25 bg-dark'  style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', position:'absolute'}}>
+           <h6 className='pt-5'>Video agregado satisfactoriamente</h6>
+           <p className='mt-3 btn btn-success' onClick={handleClose}>Cerrar</p>
+         </div>
+        : ""
+      }
     </div>
   )
 }
