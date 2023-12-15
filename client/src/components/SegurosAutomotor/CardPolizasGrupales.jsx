@@ -11,7 +11,7 @@ export const CardPolizasGrupales = () => {
           <div className="col-md-9">
             <div className="card-body">
               <h5 className="card-title fs-2 ">Polizas Colectivas </h5>
-              <p className="card-text">Descubre y explora nuestro abanico de seguros generales, diseñados para brindarte tranquilidad y protección en cada faceta de tu vida.</p>
+              <p className="card-text"></p>
               {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
             </div>
           </div>
@@ -27,11 +27,12 @@ export const CardPolizasGrupales = () => {
             <i className="bi bi-car-front-fill card-img-top bg-white text-success text-center align-middle px-4 pt-1 border border-1 border-success m-auto rounded-circle" style={{fontSize:'60px', width:'110px', height:'110px'}}></i>
             <div className="card-body  px-4">
               <h5 className="card-title text-center pb-3">Colectivas Vehículos Livianos</h5>
-              <p className="card-text">Brindamos protección financiera ante posibles daños, accidentes o robos relacionados con vehículos y motociclets, asegurando la tranquilidad y seguridad del propietario y terceros involucrados.</p>
+              <p className="card-text">Ofrecemos protección y cobertura global a todos los vehiculos asociados o vinculados con su empresa. Los siguientes, son parametros de la póliza colectiva:</p>
               <ul className="list-group-numbered">
-              <li className="list-group-item">Seguros para Automoviles</li>
-                <li className="list-group-item">Seguros para Motos</li>
-                <li className="list-group-item">SOAT</li>
+              <li className="list-group-item">Son Grupales</li>
+                <li className="list-group-item">El valor se fija durante la negociación</li>
+                <li className="list-group-item">Es renovable</li>
+                <li className="list-group-item">Se estblece vinculo directo con la empresa</li>
               </ul>
             </div>
             {/* <div className="card-footer">
@@ -44,11 +45,12 @@ export const CardPolizasGrupales = () => {
             <i className="bi bi-truck-front card-img-top bg-white text-warning text-center align-middle px-4 pt-1 border border-1 border-warning m-auto rounded-circle" style={{fontSize:'60px', width:'110px', height:'110px'}}></i>
             <div className="card-body  px-4">
               <h5 className="card-title text-center pb-3">Colectivas Vehículos Pesados</h5>
-              <p className="card-text">Brindamos protección financiera ante posibles daños, accidentes o robos relacionados con vehículos y motociclets, asegurando la tranquilidad y seguridad del propietario y terceros involucrados.</p>
+              <p className="card-text">Esta póliza  cuenta con los mismos parametros de la póliza colectiva de vehículos livianos, y adiconal a estos, incluye la proteccion inmediata de la carga o los bienes durante su traslado desde su origen y su destino.</p>
               <ul className="list-group-numbered">
-              <li className="list-group-item">Seguros para Automoviles</li>
-                <li className="list-group-item">Seguros para Motos</li>
-                <li className="list-group-item">SOAT</li>
+                <li className="list-group-item">Robo total o parcial</li>
+                <li className="list-group-item">rapiña o vandalismo</li>
+                <li className="list-group-item">Daños ocasionados durante las maniobras de carga y descarga, fallas en el sistema de refrigeración entre otros riesgos</li>
+                <li className="list-group-item">Volcadura, etc.</li>
               </ul>
             </div>
             {/* <div className="card-footer">

@@ -1,17 +1,13 @@
 import logoDhs from '../../../images/DHS.png'
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import styles from './Navbar.module.css'
-import { useDispatch } from 'react-redux';
 
 
 
 function Navbar() {
 
-  const dispatch = useDispatch();
-
-  const navigate = useNavigate();
 
   const location = useLocation();
 
@@ -24,7 +20,9 @@ function Navbar() {
 
 
     const handleScroll = () => {
-      if (window.scrollY > 0 && location.pathname !== '/PublicityVideo') {
+      if (location.pathname === '/PublicityVideo' || location.pathname === '/FormNewVideo') {
+        setScrolled(false);
+      } else if (window.scrollY > 0) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -37,7 +35,7 @@ function Navbar() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [location.pathname]);
 
 
   let color = {

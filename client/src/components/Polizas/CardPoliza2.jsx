@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import meeting from '../../../images/meeting.jpeg'
 // import styles from './intermediation.module.css'
@@ -10,9 +11,9 @@ export const CardPoliza2 = () => {
         <div className="card-body">
           <h1 className="card title text-success fw-bold m-0 border border-0">POLIZA</h1>
           <h1 className="card title fs-2 fw-semibold border border-0 ">Todo Riesgo Construcción</h1>
-          <div className="card-text py-2">Nos convertimos en sus aliados estratégicos para la intermediación de sus riesgos laborales. Generamos valor para su empresa a través de auditorías regulares y la comunicación abierta y constante entre la Administradora de Riesgos Laborales (ARL) y la empresa con el fin de abordar de manera oportuna los requerimientos, solicitudes y posibles inconvenientes.
+          <div className="card-text py-2">Asegure el éxito de su proyecto inmobiliario con nuestra gama completa de seguros de construcción! En el fascinante mundo de la construcción, sabemos que la clave para un desarrollo exitoso radica en comprender a fondo los riesgos y contar con las coberturas adecuadas. Explorando nuestro catálogo de seguros especializados, podrá tomar decisiones informadas para proteger su inversión, sin importar la magnitud de su proyecto.
           </div>
-          <a href="#" className="btn btn-success mt-2" role="button" data-bs-toggle="button">Contactanos</a>
+          <Link to={'/Contact'} className="btn btn-success mt-2" role="button" >Contactanos</Link>
         </div>
       </div>
 

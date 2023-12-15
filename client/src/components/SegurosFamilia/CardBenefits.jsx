@@ -26,7 +26,18 @@ export const CardBenefits = () => {
             <div className="card-header">Beneficios</div>
             <div className="card-body">
               <h5 className="card-title">Seguro Vida</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <ul>
+                <li>Hecho para Colombianos</li>
+                <li>Montos de cobertura flexibles</li>
+                <li>Beneficio por enfermedad terminal</li>
+                <li>Aplicar facilmente por teléfono</li>
+                <li>Aumento de cobertura anual (opcional)</li>
+                <li>Pagas menos según tu estilo de vida</li>
+                <li>Cualquier causa de muerte</li>
+                <li>Protección inmediata</li>
+                <li>Renovaciones automaticas</li>
+                <li>Cancelación en cualquier momento</li>
+              </ul>
             </div>
           </div>    
         </div>
@@ -35,7 +46,18 @@ export const CardBenefits = () => {
             <div className="card-header">Beneficios</div>
             <div className="card-body">
               <h5 className="card-title">Seguro Vivienda</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <ul>
+                <li>Hecho para Colombianos</li>
+                <li>Montos de cobertura flexibles</li>
+                <li>Protege hasta el 100% del valor de tu vivienda</li>
+                <li>Actualización de la póliza en cualquier momento</li>
+                <li>Protege los habitantes dentro de la vivienda</li>
+                <li>Protege los bienes dentro de la vivienda</li>
+                <li>Aumento de cobertura anual (opcional)</li>
+                <li>Protección inmediata</li>
+                <li>Renovaciones automaticas</li>
+                <li>Cancelación en cualquier momento</li>
+              </ul>
             </div>
           </div>    
         </div>

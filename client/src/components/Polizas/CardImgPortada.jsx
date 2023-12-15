@@ -7,9 +7,9 @@ export const CardImgPortada = () => {
         <div className="col border border-0 overflow-hidden " >
           <div className="card h-100 rounded-0 border border-0 bg-transparent ">
             <div className="card-body  px-4 ">
-              <h1 className="card-title text-dark fw-bold pb-4 text-center"><a className='text-decoration-none text-warning' href="">"Protegemos</a> tu Camino, Cuidamos lo que Amas"<br /></h1>
+              <h1 className="card-title text-dark fw-bold pb-4 text-center"><a className='text-decoration-none text-warning' href="">"Constuya</a>  con confianza, aseguramos su éxito"<br /></h1>
               {/* <h1 className="card-title text-dark fw-bold">Optimiza Tú <br /> Entonro Laboral<br /><a className='text-decoration-none text-warning' href="">con Nosotros</a></h1> */}
-              <p className="card-text text-white d-none d-sm-block text-center " style={{textWrap:'balance'}}>Nuestra misión es garantizar que tu empresa sea un lugar seguro y saludable para tus colaboradores, promoviendo un ambiente de trabajo en el que todos puedan prosperar y alcanzar su máximo potencial.</p>
+              <p className="card-text text-white d-none d-sm-block text-center " style={{textWrap:'balance'}}>Nuestras pólizas de construcción son el cimiento sólido que asegura su proyecto, protegiendo cada paso con coberturas diseñadas para anticipar los desafíos y garantizar su éxito.</p>
               <br />
               <div className="col border border-0 d-flex  align-items-center justify-content-center">
                 <Link to={'/Contact'} className='text-decoration-none'>

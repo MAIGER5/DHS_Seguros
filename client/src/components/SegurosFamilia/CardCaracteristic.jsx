@@ -28,11 +28,11 @@ export const CardCaracteristic = () => {
             <h5 className="card-title">Segruo de Vida</h5>
             {/* <p className="card-text">Resguarda tu presente y futuro con nuestras pólizas integrales. Nuestro seguro de vida garantiza la protecciónfinanciera de tus seres queridos, mientras que el seguro de vivienda vela por la seguridad y bienestar de tu hogar. ¡Invierte en tranquilidad yprotege lo que más valoras en la vida!.</p> */}
             <ul className="list-group">
-              <li className="list-group-item border-0">Seguros de Vida</li>
-              <li className="list-group-item border-0">Seguros de Vivienda</li>
-              <li className="list-group-item border-0">Seguros de Vivienda</li>
-              <li className="list-group-item border-0">Seguros de Vivienda</li>
-              <li className="list-group-item border-0">Seguros de Vivienda</li>
+              <li className="list-group-item border-0">Fallecimiento</li>
+              <li className="list-group-item border-0">Gastos funerarios</li>
+              <li className="list-group-item border-0">Enfermedad terminal</li>
+              <li className="list-group-item border-0">Invalidez total</li>
+              <li className="list-group-item border-0">Indemnización escolar</li>
             </ul>
           </div>
         </div>
@@ -42,11 +42,11 @@ export const CardCaracteristic = () => {
               <h5 className="card-title">Seguro de Vivienda</h5>
               {/* <p className="card-text">Resguarda tu presente y futuro con nuestras pólizas integrales. Nuestro seguro de vida garantiza la protección financiera de tus seres queridos, mientras que el seguro de vivienda vela por la seguridad y bienestar de tu hogar. ¡Invierte en tranquilidad y protege lo que más valoras en la vida!.</p> */}
               <ul className="list-group">
-                <li className="list-group-item border-0">Seguros de Vida</li>
-                <li className="list-group-item border-0">Seguros de Vivienda</li>
-                <li className="list-group-item border-0">Seguros de Vivienda</li>
-                <li className="list-group-item border-0">Seguros de Vivienda</li>
-                <li className="list-group-item border-0">Seguros de Vivienda</li>
+                <li className="list-group-item border-0">Desastres naturales</li>
+                <li className="list-group-item border-0">Robo de objetos regulares y de alto valor</li>
+                <li className="list-group-item border-0">Daños accidentales</li>
+                <li className="list-group-item border-0">Habitantes</li>
+                <li className="list-group-item border-0">Mascotas</li>
               </ul>
             </div>
           </div>

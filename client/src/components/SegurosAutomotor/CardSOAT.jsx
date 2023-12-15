@@ -54,7 +54,7 @@ export const CardSOAT = () => {
               </div>
               <div className="card-body ">
                 <h5 className="card-title text-center">Vehículo</h5>
-                <p className="card-text text-center" style={{fontSize:'14px'}}>Nos enorgullece ofrecer un asesoramiento personalizado y continuo a nuestros clientes, respaldándolos en cada paso de su camino.</p>
+                <p className="card-text text-center" style={{fontSize:'14px'}}></p>
               </div>
             </div>
           </div>

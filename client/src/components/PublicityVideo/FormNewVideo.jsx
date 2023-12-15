@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import styles from './PublicityVideo.module.css'
 import { useDispatch } from 'react-redux';
 import { postVideoAction } from '../../Redux/Actions/postVideoAction';
-import { CardVideoSuccesfull } from './CardVideoSuccesfull';
 
 
 export const FormNewVideo = () => {
 
   const [ successfull, setsuccessfull ] = useState(false)
-  const [ close, setClose ] = useState(false)
 
   const [ form, setForm ] = useState({
     title:"",

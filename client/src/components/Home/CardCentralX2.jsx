@@ -1,7 +1,16 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export const CardCentralX2 = () => {
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleClickDown = ()=>{
+    navigate(location.pathname, { replace: false });
+    window.scrollTo(0, 1200);
+  }
+
   return (
     <div className="container row m-auto   px-5 mt-5 mt-md-0">
       <div className="col-md-6 mb-3 mb-sm-0 border border-0 bg-white shadow-lg">
@@ -23,7 +32,7 @@ export const CardCentralX2 = () => {
             <div className='col-10'>
               <h5 className="card-title text-white">Seguros Generales </h5>
               <p className="card-text text-white mt-3" style={{fontSize:'14px'}}>Con nuestros seguros generales, garantizamos protección integral para todo lo que valoras. Desde tu hogar hasta tus bienes más preciados, cubrimos cada aspecto importante de tu vida. .</p>
-              <a href="#productosGenerales" style={{scrollBehavior: 'smooth'}} className="btn bg-light text-white ">Encuentra el Tuyo</a>
+              <p onClick={handleClickDown}   style={{scrollBehavior: 'smooth'}} className="btn bg-light text-white ">Encuentra el Tuyo</p>
             </div>
           </div>
         </div>
