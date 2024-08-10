@@ -13,7 +13,7 @@ export const Home = () => {
       <div >
         <ImgPortada/>
       </div>
-      <div className='mt-5'>
+      <div className='container mt-5 border border-0 p-0'>
         <CardCentralX2/>
       </div>
       <div className='container  my-5 border border-0 p-0' >
