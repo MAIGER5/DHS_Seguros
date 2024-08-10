@@ -1,4 +1,5 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import styles from './Home.module.css'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export const CardCentralX2 = () => {
@@ -12,7 +13,7 @@ export const CardCentralX2 = () => {
   }
 
   return (
-    <div className="container row m-auto   px-5 mt-5 mt-md-0">
+    <div className={`container row m-auto px-0 mt-5 mt-md-0 border border-0 ${styles.contCardCentralX2}`}>
       <div className="col-md-6 mb-3 mb-sm-0 border border-0 bg-white shadow-lg">
         <div className="card-body ps-2 mt-4 py-3">
           <div className='d-lg-flex  col-lg-12   col-lx-12 align-items-start'>

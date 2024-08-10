@@ -1,5 +1,5 @@
 // import imgHome from '../../../images/automotor3.jpg';
-import imgHome from '../../../../../prueba/cuatro.jpg';
+import imgHome from '../../../images/prueba4.jpg';
 import { CardImgPortada } from './CardImgPortada';
 import styles from './Polizas.module.css'
 

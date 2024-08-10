@@ -13,13 +13,13 @@ export const Home = () => {
       <div >
         <ImgPortada/>
       </div>
-      <div >
+      <div className='mt-5'>
         <CardCentralX2/>
       </div>
-      <div className='container  my-5' >
+      <div className='container  my-5 border border-0 p-0' >
         <CardBody1/>  {/*Card Intermediacion de Riesgos*/}
       </div>
-      <div className=' bg-dark mb-5' style={{marginTop:'50px'}}>
+      <div className=' ' style={{marginTop:'50px'}}>
         <CardBody2Products/>
       </div>
     </div>

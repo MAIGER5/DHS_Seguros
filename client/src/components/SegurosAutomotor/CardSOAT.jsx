@@ -11,7 +11,7 @@ export const CardSOAT = () => {
       <div className="col-12 col-md-6 pe-md-5 d-flex pb-sm-5 pb-md-0" style={{alignItems:'center'}}>
         <div className="card-body">
           <h1 className="card title text-success fw-bold m-0 border border-0">RC Moto-Vehículo</h1>
-          <h1 className="card title fs-2 fw-semibold border border-0 ">Seguro de Responsabilidad Cicil <br />Contra Daños a Terceros</h1>
+          <h1 className="card title fs-2 fw-semibold border border-0 ">Seguro de Responsabilidad Civil <br />Contra Daños a Terceros</h1>
           <div className="card-text py-2">Nuestro seguro de responsabilidad civil te brinda la tranquilidad de saber que, en situaciones imprevistas, estás respaldado. Ya sea en el ámbito empresarial o personal, este tipo de póliza cubre los costos asociados con lesiones corporales, daños a la propiedad o perjuicios ocasionados a terceros como resultado de tus actividades personales o las de tu empresa.
           </div>
           <Link to={'/Contact'} className='text-decoration-none'>

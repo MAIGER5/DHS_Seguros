@@ -24,9 +24,10 @@ export const PublicityVideo = () => {
       
       <TextColumn/>
 
-      {estadoHijo? <VistaVideo url={estadoHijo} enviarDatos2={manejarDatosHijo2}/>: "" }
-      
-    
+      {
+        estadoHijo? 
+        <VistaVideo url={estadoHijo} enviarDatos2={manejarDatosHijo2}/>
+        : "" }
 
     </div>
   )

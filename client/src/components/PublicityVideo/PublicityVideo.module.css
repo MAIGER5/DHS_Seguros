@@ -3,7 +3,7 @@
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-position: center; /* Centra la imagen en el fondo */
     background-repeat: no-repeat; /* Evita la repetición de la imagen en el fondo */
-    height: 93vh; /* Ajusta la altura de la página al 100% del viewport */
+    height: 100vh; /* Ajusta la altura de la página al 100% del viewport */
 }
 
 .imgBacgroundForm{
@@ -28,4 +28,111 @@
   .barraVertical::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.5); /* Color del "pulgar" de la barra de desplazamiento */
     border-radius: 6px; /* Radio de borde del "pulgar" */
+  }
+
+
+  .imgBacground{
+    display: flex;
+  }
+
+
+  .h1TextVideo{
+    text-wrap: balance;
+    font-size: 45px;
+    line-height: 1.3;
+    transform: scaley(1.3);
+  }
+
+  @media (1020px > width){
+
+    .cotendedorTextVideo{
+      width: 60%;
+      margin: auto;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .h1TextVideo{
+      font-size: 30px;
+    }
+
+    .cotendedorVideoColumn{
+      width: 80%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .imgBacground{
+      flex-direction: column;
+      background-image: none;background-color: black;
+    }
+
+    .imgBacground > :first-child{
+      order: 2;
+      z-index: 1;
+    }
+  
+    .imgBacground > :nth-child(2){
+      order: 1;
+      z-index: 1;
+    }
+
+    .vistaVideo{
+      z-index: 999;
+    }
+  
+  }
+
+  @media (820px > width){
+
+    .cotendedorTextVideo{
+      width: 90%;
+    }
+
+    .h1TextVideo{
+      font-size: 30px;
+    }
+
+    .imgBacground > :first-child{
+      order: 2;
+      z-index: 1;
+    }
+  
+    .imgBacground > :nth-child(2){
+      order: 1;
+      z-index: 1;
+    }
+
+    .vistaVideo{
+      z-index: 999;
+    }
+  
+  
+  }
+
+  @media (420px > width){
+
+    .cotendedorTextVideo{
+      width: 100%;
+      margin: 0;
+    }
+
+    .h1TextVideo{
+      font-size: 25px;
+    }
+
+    .imgBacground > :first-child{
+      order: 2;
+      z-index: 1;
+    }
+  
+    .imgBacground > :nth-child(2){
+      order: 1;
+      z-index: 1;
+    }
+
+    .vistaVideo{
+      z-index: 999;
+    }
+  
   }

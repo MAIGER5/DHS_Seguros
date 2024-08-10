@@ -32,7 +32,7 @@ export const CardPolizasGrupales = () => {
               <li className="list-group-item">Son Grupales</li>
                 <li className="list-group-item">El valor se fija durante la negociación</li>
                 <li className="list-group-item">Es renovable</li>
-                <li className="list-group-item">Se estblece vinculo directo con la empresa</li>
+                <li className="list-group-item">Se establece vinculo directo con la empresa</li>
               </ul>
             </div>
             {/* <div className="card-footer">
@@ -48,7 +48,7 @@ export const CardPolizasGrupales = () => {
               <p className="card-text">Esta póliza  cuenta con los mismos parametros de la póliza colectiva de vehículos livianos, y adiconal a estos, incluye la proteccion inmediata de la carga o los bienes durante su traslado desde su origen y su destino.</p>
               <ul className="list-group-numbered">
                 <li className="list-group-item">Robo total o parcial</li>
-                <li className="list-group-item">rapiña o vandalismo</li>
+                <li className="list-group-item">Rapiña o vandalismo</li>
                 <li className="list-group-item">Daños ocasionados durante las maniobras de carga y descarga, fallas en el sistema de refrigeración entre otros riesgos</li>
                 <li className="list-group-item">Volcadura, etc.</li>
               </ul>

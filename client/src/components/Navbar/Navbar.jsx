@@ -136,7 +136,7 @@ function Navbar() {
                   Servicios
                 </a>
                 <ul className={`dropdown-menu bg-dark ${collapso ? 'collapse' : ''} ${styles.textoDropdownMenu}`} >
-                  <Link to={'/Intermediation'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Mis Polizas</a></Link>
+                  {/* <Link to={'/Intermediation'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Mis Polizas</a></Link> */}
                   <li><hr className="dropdown-divider" /></li>
                   <Link to={'/PublicityVideo'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Actualidad</a></Link>
                   {/* <Link to={'/SegFamilia'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">none</a></Link>
@@ -148,7 +148,7 @@ function Navbar() {
                   Adnministrador
                 </a>
                 <ul className={`dropdown-menu bg-dark ${collapso ? 'collapse' : ''} ${styles.textoDropdownMenu}`} >
-                  <Link to={'/Intermediation'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Monitoreo de Datos</a></Link>
+                  {/* <Link to={'/Intermediation'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Monitoreo de Datos</a></Link> */}
                   <li><hr className="dropdown-divider" /></li>
                   <Link to={'/FormNewVideo'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">Formulario de Videos</a></Link>
                   {/* <Link to={'/SegFamilia'} className='text-decoration-none' onClick={handleItemClick}><a className="dropdown-item text-success" href="#">none</a></Link>

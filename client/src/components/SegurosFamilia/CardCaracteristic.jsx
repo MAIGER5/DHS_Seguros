@@ -39,7 +39,7 @@ export const CardCaracteristic = () => {
         <div className={`card h-100 rounded-0 border border-0 shadow z-1  ${styles.efectCardProductsGen}`}>
             <i className="bi bi-house-heart card-img-top fs-1 text-warning px-4 pt-4"></i>
             <div className="card-body  ">
-              <h5 className="card-title">Seguro de Vivienda</h5>
+              <h5 className="card-title">Seguros Hogar</h5>
               {/* <p className="card-text">Resguarda tu presente y futuro con nuestras pólizas integrales. Nuestro seguro de vida garantiza la protección financiera de tus seres queridos, mientras que el seguro de vivienda vela por la seguridad y bienestar de tu hogar. ¡Invierte en tranquilidad y protege lo que más valoras en la vida!.</p> */}
               <ul className="list-group">
                 <li className="list-group-item border-0">Desastres naturales</li>

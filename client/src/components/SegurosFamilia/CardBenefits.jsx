@@ -14,9 +14,9 @@ export const CardBenefits = () => {
               {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
             </div>
           </div>
-          <Link to={'/Contact'} className="col-md-3 border border-0 d-flex justify-content-center align-items-center text-decoration-none">
+          {/* <Link to={'/Contact'} className="col-md-3 border border-0 d-flex justify-content-center align-items-center text-decoration-none">
             <a href="#" className="btn btn-success mt-2 z-1 d-none d-md-block" >Contactanos</a>
-          </Link>
+          </Link> */}
         </div>
       </div>
 
@@ -45,7 +45,7 @@ export const CardBenefits = () => {
           <div className="card border rounded-0 mb-3" >
             <div className="card-header">Beneficios</div>
             <div className="card-body">
-              <h5 className="card-title">Seguro Vivienda</h5>
+              <h5 className="card-title">SeguroS Hogar</h5>
               <ul>
                 <li>Hecho para Colombianos</li>
                 <li>Montos de cobertura flexibles</li>

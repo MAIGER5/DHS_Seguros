@@ -18,7 +18,7 @@ export const CardHorizontalSegVida = () => {
       </div>
       <div className="card border border-0 ">
         <div className="card-body border border-1">
-          <h5 className="card-title fs-4">SEGURO DE VIVIENDA</h5>
+          <h5 className="card-title fs-4">SEGUROS HOGAR</h5>
           <h5 className="card-title fs-6 my-4">Te Protegemos de:</h5>
           <p className="card-text">Cualquier afectación e improvisto que pueda dañar tu vivienda.</p>
           <Link to={'/Contact'} className="btn btn-warning mt-5  w-lg-75 text-dark fw-medium">¡Cotiza Ahora!</Link>

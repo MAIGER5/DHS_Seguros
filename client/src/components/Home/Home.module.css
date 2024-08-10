@@ -28,23 +28,51 @@
     background: #226A8A;
 } */
 
-#efectCardProductsGen {
+/* #efectCardProductsGen {
     transition: transform 1s;
     transition: opacity 1s;
 }
 #efectCardProductsGen:hover {
     opacity: 85%;
     transform: scale(1.05);
-}
+} */
 
 
 
 .efectCardProductsGen {
     transition: transform 1s;
     transition: opacity 1s;
+    transition: background 1s;
 }
 .efectCardProductsGen:hover {
-    background-color: #ebeff1;
+    background: #ebeff1;
     opacity: 90%;
     transform: scale(1.009);
+}
+
+
+
+
+
+/*STYLES PARA EL COMPONENTE CardCentralX2 */
+
+.contCardCentralX2{
+    width: 80%;
+}
+
+
+
+/*STYLES PARA EL COMPONENTE CardBody1 */
+
+
+
+/*STYLES PARA EL COMPONENTE CardBody2Products */
+
+.containCardBody2Products p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.listCard{
+    list-style-type: disc;
 }
